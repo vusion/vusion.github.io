@@ -1,7 +1,7 @@
 # 安装
 
 ``` bash
-yarn global add vusion-cli
+$ yarn global add vusion-cli
 ```
 
 

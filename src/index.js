@@ -8,6 +8,7 @@ import Article from './common/u-article.vue';
 import NavbarItem from './common/u-navbar-item.vue';
 import ThemeSelect from './common/u-theme-select.vue';
 import ThemeSelectItem from './common/u-theme-select-item.vue';
+import Logo from './common/u-logo.vue';
 import Library from './common/u-library.vue';
 import './common/atom-one-light.css';
 import './common/base.css';
@@ -18,6 +19,7 @@ const Components = Object.assign({}, CloudUI, {
     NavbarItem,
     ThemeSelect,
     ThemeSelectItem,
+    Logo,
     Library,
 });
 delete Components.default;

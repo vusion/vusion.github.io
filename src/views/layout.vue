@@ -1,16 +1,11 @@
 <template>
 <u-global-layout>
     <u-navbar slot="head">
-        <u-logo slot="left" name="163yun">组件平台</u-logo>
-        <u-navbar-item to="/guides">教程</u-navbar-item>
+        <u-logo slot="left" name="163yun"></u-logo>
+        <u-navbar-item to="/guides">指南</u-navbar-item>
         <u-navbar-item to="/documentation">文档</u-navbar-item>
         <u-navbar-item to="/libraries">组件库</u-navbar-item>
-        <u-navbar-item to="/cases">案例</u-navbar-item>
-        <u-theme-select slot="right" v-model="theme" @select="onSelectTheme">
-            <u-theme-select-item value="default"><div :class="$style.color"></div>Default</u-theme-select-item>
-            <u-theme-select-item value="dark"><div :class="$style.color" color="dark"></div>Dark</u-theme-select-item>
-            <u-theme-select-item value="seagreen"><div :class="$style.color" color="seagreen"></div>SeaGreen</u-theme-select-item>
-        </u-theme-select>
+        <u-navbar-item to="/examples">示例</u-navbar-item>
     </u-navbar>
     <div :class="$style.body" v-if="isLibraries" slot="body">
         <div :class="$style.wrap"><router-view></router-view></div>
