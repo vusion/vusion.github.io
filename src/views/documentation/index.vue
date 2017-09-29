@@ -3,22 +3,23 @@
         <div :class="$style.side">
             <u-sidebar size="small">
                 <u-sidebar-group title="概念">
-                    <u-sidebar-item to="/documentation/vusion/introduction">介绍</u-sidebar-item>
-                    <u-sidebar-item to="/documentation/vusion/1">模块化</u-sidebar-item>
-                    <u-sidebar-item to="/documentation/vusion/2">组件化</u-sidebar-item>
-                    <u-sidebar-item to="/documentation/vusion/2">组件库</u-sidebar-item>
-                    <u-sidebar-item to="/documentation/vusion/3">目录结构</u-sidebar-item>
-                    <u-sidebar-item to="/documentation/vusion/3">路由</u-sidebar-item>
-                    <u-sidebar-item to="/documentation/vusion/3">服务</u-sidebar-item>
-                    <u-sidebar-item to="/documentation/vusion/3">组件文档</u-sidebar-item>
-                    <u-sidebar-item to="/documentation/vusion/3">接口文档</u-sidebar-item>
-                    <u-sidebar-item to="/documentation/vusion/3">测试</u-sidebar-item>
-                    <u-sidebar-item to="/documentation/vusion/3">服务端渲染</u-sidebar-item>
-                    <u-sidebar-item to="/documentation/vusion/3">打包与部署</u-sidebar-item>
-                    <u-sidebar-item v-if="false" to="/documentation/vusion/3">安全</u-sidebar-item>
-                    <u-sidebar-item v-if="false" to="/documentation/vusion/3">国际化</u-sidebar-item>
-                    <u-sidebar-item v-if="false" to="/documentation/vusion/3">编辑器工具</u-sidebar-item>
-                    <u-sidebar-item to="/documentation/vusion/3">编码风格</u-sidebar-item>
+                    <u-sidebar-item to="/documentation/concepts/introduction">介绍</u-sidebar-item>
+                    <u-sidebar-item to="/documentation/concepts/technical-selection">技术选型</u-sidebar-item>
+                    <u-sidebar-item to="/documentation/concepts/modularity">模块化</u-sidebar-item>
+                    <u-sidebar-item to="/documentation/concepts/componentization">组件化</u-sidebar-item>
+                    <u-sidebar-item to="/documentation/concepts/2">组件库</u-sidebar-item>
+                    <u-sidebar-item to="/documentation/concepts/3">目录结构</u-sidebar-item>
+                    <u-sidebar-item to="/documentation/concepts/3">路由</u-sidebar-item>
+                    <u-sidebar-item to="/documentation/concepts/3">服务</u-sidebar-item>
+                    <u-sidebar-item to="/documentation/concepts/3">组件文档</u-sidebar-item>
+                    <u-sidebar-item to="/documentation/concepts/3">接口文档</u-sidebar-item>
+                    <u-sidebar-item to="/documentation/concepts/3">测试</u-sidebar-item>
+                    <u-sidebar-item to="/documentation/concepts/3">服务端渲染</u-sidebar-item>
+                    <u-sidebar-item to="/documentation/concepts/3">打包与部署</u-sidebar-item>
+                    <u-sidebar-item v-if="false" to="/documentation/concepts/3">安全</u-sidebar-item>
+                    <u-sidebar-item v-if="false" to="/documentation/concepts/3">国际化</u-sidebar-item>
+                    <u-sidebar-item v-if="false" to="/documentation/concepts/3">编辑器工具</u-sidebar-item>
+                    <u-sidebar-item to="/documentation/concepts/3">编码风格</u-sidebar-item>
                 </u-sidebar-group>
                 <u-sidebar-group title="Vusion App">
                     <u-sidebar-item to="/components/u-linear-layout">安装</u-sidebar-item>

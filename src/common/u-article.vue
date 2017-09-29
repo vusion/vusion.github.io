@@ -29,6 +29,7 @@ export default {
     font-size: 20px;
     padding: 0 60px;
     margin: 80px -60px 10px;
+    color: #666;
 }
 
 .root > h3 {
@@ -66,8 +67,25 @@ export default {
     margin: .3em 0;
 }
 
-.root > ul, .root > ol {
+.root > ul {
+    list-style: disc;
     padding-left: 20px;
+}
+
+.root > ol {
+    padding-left: 20px;
+    list-style: decimal;
+}
+
+.root > p > img {
+    max-width: 100%;
+}
+
+.root > blockquote {
+    margin: 0;
+    padding: 4px 16px;
+    background: #fafafa;
+    border-left: 4px solid #eee;
 }
 
 .root pre {

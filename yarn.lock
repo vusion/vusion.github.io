@@ -996,6 +996,14 @@ lru-cache@^4.0.1:
     pseudomap "^1.0.2"
     yallist "^2.1.2"
 
+markdown-it-for-inline@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.npmjs.org/markdown-it-for-inline/-/markdown-it-for-inline-0.1.1.tgz#435f2316f5b5e68e1450cfa2242f2b8d59adc75f"
+
+markdown-it-modify-token@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.npmjs.org/markdown-it-modify-token/-/markdown-it-modify-token-1.0.2.tgz#542471a323270a5c102a635b07fe3b47c278eea0"
+
 markdown-it@^6.0.5:
   version "6.1.1"
   resolved "https://registry.npmjs.org/markdown-it/-/markdown-it-6.1.1.tgz#ced037f4473ee9f5153ac414f77dc83c91ba927c"
@@ -1599,9 +1607,9 @@ verror@1.10.0:
     core-util-is "1.0.2"
     extsprintf "^1.2.0"
 
-vue-markdown-loader@rainfore/vue-markdown-loader:
-  version "2.1.0"
-  resolved "https://codeload.github.com/rainfore/vue-markdown-loader/tar.gz/bb050a8aa8e6794453645ace74b3d9cf902f989e"
+vue-markdown-loader@^2.2.1:
+  version "2.2.1"
+  resolved "https://registry.npmjs.org/vue-markdown-loader/-/vue-markdown-loader-2.2.1.tgz#becf0c7455589eb27189fe78a9d5a283bb7acc00"
   dependencies:
     cheerio "^0.20.0"
     highlight.js "^9.4.0"

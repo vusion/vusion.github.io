@@ -1,43 +1,45 @@
 {
-    "name": "vusion.github.io",
-    "description": "Vusion Websites",
-    "author": "Rainfore <rainforest92@126.com>",
-    "main": "./index.js",
-    "scripts": {
-      "precommit": "bash node_modules/vusion-hooks/pre-commit"
-    },
-    "repository": "vusion/vusion.github.io",
-    "homepage": "http://vusion.github.io",
-    "bugs": {
-      "url": "http://github.com/vusion/vusion.github.io/issues"
-    },
-    "license": "MIT",
-    "keywords": [
-      "vusion",
-      "framework",
-      "vue",
-      "solution"
-    ],
-    "tags": [
-      "vusion",
-      "framework",
-      "vue",
-      "solution"
-    ],
-    "dependencies": {
-      "cloud-ui.vusion": "~0.1.0",
-      "vue": "^2.4.0",
-      "vue-markdown-loader": "rainfore/vue-markdown-loader",
-      "vue-router": "^2.7.0"
-    },
-    "devDependencies": {
-      "babel-eslint": "^7.2.3",
-      "eslint": "^4.3.0",
-      "eslint-config-vusion": "^1.2.2",
-      "eslint-plugin-html": "^3.2.1",
-      "highlight.js": "^9.12.0",
-      "husky": "^0.13.3",
-      "shelljs": "^0.7.8",
-      "vusion-hooks": "^0.1.0"
-    }
+  "name": "vusion.github.io",
+  "description": "Vusion Websites",
+  "author": "Rainfore <rainforest92@126.com>",
+  "main": "./index.js",
+  "scripts": {
+    "precommit": "bash node_modules/vusion-hooks/pre-commit"
+  },
+  "repository": "vusion/vusion.github.io",
+  "homepage": "http://vusion.github.io",
+  "bugs": {
+    "url": "http://github.com/vusion/vusion.github.io/issues"
+  },
+  "license": "MIT",
+  "keywords": [
+    "vusion",
+    "framework",
+    "vue",
+    "solution"
+  ],
+  "tags": [
+    "vusion",
+    "framework",
+    "vue",
+    "solution"
+  ],
+  "dependencies": {
+    "cloud-ui.vusion": "~0.1.0",
+    "vue": "^2.4.0",
+    "vue-markdown-loader": "^2.2.1",
+    "vue-router": "^2.7.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "eslint": "^4.3.0",
+    "eslint-config-vusion": "^1.2.2",
+    "eslint-plugin-html": "^3.2.1",
+    "highlight.js": "^9.12.0",
+    "husky": "^0.13.3",
+    "markdown-it-for-inline": "^0.1.1",
+    "markdown-it-modify-token": "^1.0.2",
+    "shelljs": "^0.7.8",
+    "vusion-hooks": "^0.1.0"
   }
+}

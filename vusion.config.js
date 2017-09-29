@@ -1,6 +1,7 @@
 const path = require('path');
 const hljs = require('highlight.js');
 const codeActivator = require('./lib/code-activator');
+const iterator = require('markdown-it-for-inline');
 
 let theme = path.basename(process.cwd());
 if (theme === 'src')
@@ -41,9 +42,13 @@ module.exports = {
                             } catch (e) {}
                         }
 
-                        const result = this.utils.escapeHtml(str);
+                        const result = this.utils ? this.utils.escapeHtml(str) : str;
                         return `<pre class="hljs"><code>${result}</code></pre>`;
                     },
+                    use: [
+                        [iterator, 'link_converter', 'link_open', (tokens, idx) => tokens[idx].tag = 'u-link'],
+                        [iterator, 'link_converter', 'link_close', (tokens, idx) => tokens[idx].tag = 'u-link'],
+                    ],
                 } },
             ],
         },
