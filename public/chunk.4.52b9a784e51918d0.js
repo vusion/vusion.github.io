@@ -1,4 +1,4 @@
-webpackJsonp([2],{
+webpackJsonp([4],{
 
 /***/ 619:
 /***/ (function(module, exports, __webpack_require__) {
@@ -60,29 +60,29 @@ module.exports= function() {
     if(window.HAS_CREATE_FONT_STYLE){
         return;
     }
-    addStyle();
+    window.ICON_FONT_STYLE && addStyle();
     window.HAS_CREATE_FONT_STYLE = true;
 }
 if(false){
-    window.ICON_FONT_STYLE.update = updateStyle;
+    window.ICON_FONT_STYLE && (window.ICON_FONT_STYLE.update = updateStyle);
 }
 
 
 /***/ }),
 
-/***/ 624:
+/***/ 623:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(636);
+module.exports = __webpack_require__(634);
 
 /***/ }),
 
-/***/ 636:
+/***/ 634:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__vusion_cli_node_modules_vusion_vue_loader_lib_template_compiler_index_id_data_v_1a471c01_hasScoped_false_vusion_cli_node_modules_vusion_vue_loader_lib_selector_type_template_index_0_node_modules_vue_markdown_loader_lib_markdown_compiler_js_raw_installation_md__ = __webpack_require__(637);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__vusion_cli_node_modules_vusion_vue_loader_lib_template_compiler_index_id_data_v_3ff2b223_hasScoped_false_vusion_cli_node_modules_vusion_vue_loader_lib_selector_type_template_index_0_node_modules_vue_markdown_loader_lib_markdown_compiler_js_raw_component_based_md__ = __webpack_require__(635);
 var normalizeComponent = __webpack_require__(6)
 /* script */
 var __vue_script__ = null
@@ -96,7 +96,7 @@ var __vue_scopeId__ = null
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
   __vue_script__,
-  __WEBPACK_IMPORTED_MODULE_0__vusion_cli_node_modules_vusion_vue_loader_lib_template_compiler_index_id_data_v_1a471c01_hasScoped_false_vusion_cli_node_modules_vusion_vue_loader_lib_selector_type_template_index_0_node_modules_vue_markdown_loader_lib_markdown_compiler_js_raw_installation_md__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_0__vusion_cli_node_modules_vusion_vue_loader_lib_template_compiler_index_id_data_v_3ff2b223_hasScoped_false_vusion_cli_node_modules_vusion_vue_loader_lib_selector_type_template_index_0_node_modules_vue_markdown_loader_lib_markdown_compiler_js_raw_component_based_md__["a" /* default */],
   __vue_styles__,
   __vue_scopeId__,
   __vue_module_identifier__
@@ -107,21 +107,12 @@ var Component = normalizeComponent(
 
 /***/ }),
 
-/***/ 637:
+/***/ 635:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('u-article', [_c('h1', [_vm._v("安装")]), _vm._v(" "), _c('pre', {
-    pre: true,
-    attrs: {
-      "class": "hljs lang-bash"
-    }
-  }, [_c('code', {
-    attrs: {
-      "v-pre": ""
-    }
-  }, [_vm._v("$ yarn global add vusion-cli\n")])]), _vm._v(" "), _c('p', [_vm._v("wewgegawe")])])
+  return _c('u-article', [_c('h1', [_vm._v("组件化")]), _vm._v(" "), _c('h3', [_vm._v("完全组件化")])])
 }
 var staticRenderFns = []
 var esExports = { render: render, staticRenderFns: staticRenderFns }
@@ -129,4 +120,9 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 
 /***/ })
 
-});
+});/* icon font style message */
+                                if (typeof window !== "undefined" && !window.ICON_FONT_STYLE) {
+                                    window.ICON_FONT_STYLE = {"name":"vusion-icon-font","ttf":{"path":"/public/vusion-icon-font.ttf","md5":"077dce4f1cb44476644d61a91c1ec0d7"},"eot":{"path":"/public/vusion-icon-font.eot","md5":"763e5d5e06c7839a616d874c730e4436"},"woff":{"path":"/public/vusion-icon-font.woff","md5":"26a786356f05852e49b0905e047bb173"},"svg":{"path":"/public/vusion-icon-font.svg","md5":"be17bfef09c5a825325f8ecdb68f4765"}};
+                                } else if (typeof window !== "undefined" && window.ICON_FONT_STYLE && window.ICON_FONT_STYLE.update) {
+                                    window.ICON_FONT_STYLE.update({"name":"vusion-icon-font","ttf":{"path":"/public/vusion-icon-font.ttf","md5":"077dce4f1cb44476644d61a91c1ec0d7"},"eot":{"path":"/public/vusion-icon-font.eot","md5":"763e5d5e06c7839a616d874c730e4436"},"woff":{"path":"/public/vusion-icon-font.woff","md5":"26a786356f05852e49b0905e047bb173"},"svg":{"path":"/public/vusion-icon-font.svg","md5":"be17bfef09c5a825325f8ecdb68f4765"}});
+                                }

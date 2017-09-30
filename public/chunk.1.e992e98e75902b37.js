@@ -60,11 +60,11 @@ module.exports= function() {
     if(window.HAS_CREATE_FONT_STYLE){
         return;
     }
-    addStyle();
+    window.ICON_FONT_STYLE && addStyle();
     window.HAS_CREATE_FONT_STYLE = true;
 }
 if(false){
-    window.ICON_FONT_STYLE.update = updateStyle;
+    window.ICON_FONT_STYLE && (window.ICON_FONT_STYLE.update = updateStyle);
 }
 
 
@@ -140,4 +140,9 @@ module.exports = __webpack_require__.p + "webpack-bundler.d734657deb967f3e.jpg";
 
 /***/ })
 
-});
+});/* icon font style message */
+                                if (typeof window !== "undefined" && !window.ICON_FONT_STYLE) {
+                                    window.ICON_FONT_STYLE = {"name":"vusion-icon-font","ttf":{"path":"/public/vusion-icon-font.ttf","md5":"077dce4f1cb44476644d61a91c1ec0d7"},"eot":{"path":"/public/vusion-icon-font.eot","md5":"763e5d5e06c7839a616d874c730e4436"},"woff":{"path":"/public/vusion-icon-font.woff","md5":"26a786356f05852e49b0905e047bb173"},"svg":{"path":"/public/vusion-icon-font.svg","md5":"be17bfef09c5a825325f8ecdb68f4765"}};
+                                } else if (typeof window !== "undefined" && window.ICON_FONT_STYLE && window.ICON_FONT_STYLE.update) {
+                                    window.ICON_FONT_STYLE.update({"name":"vusion-icon-font","ttf":{"path":"/public/vusion-icon-font.ttf","md5":"077dce4f1cb44476644d61a91c1ec0d7"},"eot":{"path":"/public/vusion-icon-font.eot","md5":"763e5d5e06c7839a616d874c730e4436"},"woff":{"path":"/public/vusion-icon-font.woff","md5":"26a786356f05852e49b0905e047bb173"},"svg":{"path":"/public/vusion-icon-font.svg","md5":"be17bfef09c5a825325f8ecdb68f4765"}});
+                                }

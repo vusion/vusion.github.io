@@ -1,10 +1,5 @@
 /*! Packed by Vusion. */
-/* icon font style message */
-                                if (typeof window !== "undefined" && !window.ICON_FONT_STYLE) {
-                                    window.ICON_FONT_STYLE = {"name":"vusion-icon-font","ttf":{"path":"/public/vusion-icon-font.ttf","md5":"a75c033cacdee711666007423e10ec0f"},"eot":{"path":"/public/vusion-icon-font.eot","md5":"52c5fbcaa6b13684d02f10a2360c9716"},"woff":{"path":"/public/vusion-icon-font.woff","md5":"07fcb58631c038345b338c7b77a0dd76"},"svg":{"path":"/public/vusion-icon-font.svg","md5":"be17bfef09c5a825325f8ecdb68f4765"}};
-                                } else if (typeof window !== "undefined" && window.ICON_FONT_STYLE && window.ICON_FONT_STYLE.update) {
-                                    window.ICON_FONT_STYLE.update({"name":"vusion-icon-font","ttf":{"path":"/public/vusion-icon-font.ttf","md5":"a75c033cacdee711666007423e10ec0f"},"eot":{"path":"/public/vusion-icon-font.eot","md5":"52c5fbcaa6b13684d02f10a2360c9716"},"woff":{"path":"/public/vusion-icon-font.woff","md5":"07fcb58631c038345b338c7b77a0dd76"},"svg":{"path":"/public/vusion-icon-font.svg","md5":"be17bfef09c5a825325f8ecdb68f4765"}});
-                                }/******/ (function(modules) { // webpackBootstrap
+/******/ (function(modules) { // webpackBootstrap
 /******/ 	// install a JSONP callback for chunk loading
 /******/ 	var parentJsonpFunction = window["webpackJsonp"];
 /******/ 	window["webpackJsonp"] = function webpackJsonpCallback(chunkIds, moreModules, executeModules) {
@@ -92,7 +87,7 @@
 /******/ 		if (__webpack_require__.nc) {
 /******/ 			script.setAttribute("nonce", __webpack_require__.nc);
 /******/ 		}
-/******/ 		script.src = __webpack_require__.p + "chunk." + ({}[chunkId]||chunkId) + "." + {"0":"08bdb3d20b62c02b","1":"4bc20411433f3247","2":"a7fbe893e6c6f165","3":"1fbd0a019fa2267d","4":"c4f2d002acb65759"}[chunkId] + ".js";
+/******/ 		script.src = __webpack_require__.p + "chunk." + ({}[chunkId]||chunkId) + "." + {"0":"ed903b028aa2164c","1":"e992e98e75902b37","2":"6933f3fbb156b1c0","3":"010bac8abd26c6b0","4":"52b9a784e51918d0"}[chunkId] + ".js";
 /******/ 		var timeout = setTimeout(onScriptComplete, 120000);
 /******/ 		script.onerror = script.onload = onScriptComplete;
 /******/ 		function onScriptComplete() {
@@ -16659,7 +16654,7 @@ var content = __webpack_require__(103);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("7e8c4eff", content, true);
+var update = __webpack_require__(2)("5be84e9c", content, true);
 
 /***/ }),
 /* 103 */
@@ -16817,7 +16812,7 @@ var content = __webpack_require__(109);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("c84223ee", content, true);
+var update = __webpack_require__(2)("7a7986f6", content, true);
 
 /***/ }),
 /* 109 */
@@ -17204,7 +17199,7 @@ var content = __webpack_require__(118);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("dfd47102", content, true);
+var update = __webpack_require__(2)("5dfba4df", content, true);
 
 /***/ }),
 /* 118 */
@@ -17312,7 +17307,7 @@ var content = __webpack_require__(125);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("4751f516", content, true);
+var update = __webpack_require__(2)("5c503122", content, true);
 
 /***/ }),
 /* 125 */
@@ -17409,7 +17404,7 @@ var content = __webpack_require__(129);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("66235850", content, true);
+var update = __webpack_require__(2)("3bc936f0", content, true);
 
 /***/ }),
 /* 129 */
@@ -17820,7 +17815,7 @@ var content = __webpack_require__(132);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("6ab8e9a4", content, true);
+var update = __webpack_require__(2)("3f9a9d31", content, true);
 
 /***/ }),
 /* 132 */
@@ -20560,7 +20555,7 @@ var content = __webpack_require__(138);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("a3bb9c78", content, true);
+var update = __webpack_require__(2)("25c13d57", content, true);
 
 /***/ }),
 /* 138 */
@@ -20691,7 +20686,7 @@ var content = __webpack_require__(143);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("3fe44006", content, true);
+var update = __webpack_require__(2)("277c1fea", content, true);
 
 /***/ }),
 /* 143 */
@@ -21041,7 +21036,7 @@ var content = __webpack_require__(150);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("66077f84", content, true);
+var update = __webpack_require__(2)("6c46699e", content, true);
 
 /***/ }),
 /* 150 */
@@ -21155,7 +21150,7 @@ var content = __webpack_require__(157);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("2c36f654", content, true);
+var update = __webpack_require__(2)("31353394", content, true);
 
 /***/ }),
 /* 157 */
@@ -21320,7 +21315,7 @@ var content = __webpack_require__(162);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("adbdf9cc", content, true);
+var update = __webpack_require__(2)("6859940d", content, true);
 
 /***/ }),
 /* 162 */
@@ -21483,7 +21478,7 @@ var content = __webpack_require__(167);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("6f6c092d", content, true);
+var update = __webpack_require__(2)("d0313b4c", content, true);
 
 /***/ }),
 /* 167 */
@@ -21560,7 +21555,7 @@ var content = __webpack_require__(171);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("853d85c4", content, true);
+var update = __webpack_require__(2)("5137a2ea", content, true);
 
 /***/ }),
 /* 171 */
@@ -21975,7 +21970,7 @@ var content = __webpack_require__(182);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("447db6cc", content, true);
+var update = __webpack_require__(2)("79c90819", content, true);
 
 /***/ }),
 /* 182 */
@@ -22294,7 +22289,7 @@ var content = __webpack_require__(187);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("15ceee5a", content, true);
+var update = __webpack_require__(2)("ffc23b9a", content, true);
 
 /***/ }),
 /* 187 */
@@ -22631,7 +22626,7 @@ var content = __webpack_require__(191);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("6fbf7454", content, true);
+var update = __webpack_require__(2)("58802b36", content, true);
 
 /***/ }),
 /* 191 */
@@ -22769,7 +22764,7 @@ var content = __webpack_require__(194);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("e94c47bc", content, true);
+var update = __webpack_require__(2)("b4597c22", content, true);
 
 /***/ }),
 /* 194 */
@@ -25280,7 +25275,7 @@ var content = __webpack_require__(251);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("fd92940a", content, true);
+var update = __webpack_require__(2)("308525ee", content, true);
 
 /***/ }),
 /* 251 */
@@ -25346,7 +25341,7 @@ var content = __webpack_require__(255);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("a8543914", content, true);
+var update = __webpack_require__(2)("06affff6", content, true);
 
 /***/ }),
 /* 255 */
@@ -25481,7 +25476,7 @@ var content = __webpack_require__(260);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("6f5b5796", content, true);
+var update = __webpack_require__(2)("6523b8c9", content, true);
 
 /***/ }),
 /* 260 */
@@ -25550,7 +25545,7 @@ var content = __webpack_require__(264);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("659d6f07", content, true);
+var update = __webpack_require__(2)("0418aada", content, true);
 
 /***/ }),
 /* 264 */
@@ -27665,7 +27660,7 @@ var content = __webpack_require__(323);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("7637a8fd", content, true);
+var update = __webpack_require__(2)("fa2618c6", content, true);
 
 /***/ }),
 /* 323 */
@@ -27749,7 +27744,7 @@ var content = __webpack_require__(328);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("39fb0dae", content, true);
+var update = __webpack_require__(2)("5673e44e", content, true);
 
 /***/ }),
 /* 328 */
@@ -27789,7 +27784,7 @@ var content = __webpack_require__(331);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("31acce94", content, true);
+var update = __webpack_require__(2)("08c6a3f4", content, true);
 
 /***/ }),
 /* 331 */
@@ -27932,7 +27927,7 @@ var content = __webpack_require__(336);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("c69a1f3a", content, true);
+var update = __webpack_require__(2)("7dbc6df0", content, true);
 
 /***/ }),
 /* 336 */
@@ -28101,7 +28096,7 @@ var content = __webpack_require__(341);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("250c9e44", content, true);
+var update = __webpack_require__(2)("1babec97", content, true);
 
 /***/ }),
 /* 341 */
@@ -28577,7 +28572,7 @@ var content = __webpack_require__(346);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("2a97ff34", content, true);
+var update = __webpack_require__(2)("0833f293", content, true);
 
 /***/ }),
 /* 346 */
@@ -28662,7 +28657,7 @@ var content = __webpack_require__(351);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("5fde8c70", content, true);
+var update = __webpack_require__(2)("813b7ff0", content, true);
 
 /***/ }),
 /* 351 */
@@ -28752,7 +28747,7 @@ var content = __webpack_require__(356);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("ce4c36bc", content, true);
+var update = __webpack_require__(2)("cba5de22", content, true);
 
 /***/ }),
 /* 356 */
@@ -28818,7 +28813,7 @@ var content = __webpack_require__(360);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("69817005", content, true);
+var update = __webpack_require__(2)("718ef565", content, true);
 
 /***/ }),
 /* 360 */
@@ -29232,7 +29227,7 @@ var content = __webpack_require__(379);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("362285d9", content, true);
+var update = __webpack_require__(2)("0999618e", content, true);
 
 /***/ }),
 /* 379 */
@@ -29390,7 +29385,7 @@ var content = __webpack_require__(382);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("7bbd4555", content, true);
+var update = __webpack_require__(2)("6b393ff5", content, true);
 
 /***/ }),
 /* 382 */
@@ -29643,7 +29638,7 @@ var content = __webpack_require__(392);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("717404ee", content, true);
+var update = __webpack_require__(2)("0afddd0a", content, true);
 
 /***/ }),
 /* 392 */
@@ -29747,7 +29742,7 @@ var content = __webpack_require__(397);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("ab29a4b8", content, true);
+var update = __webpack_require__(2)("5c4d57b7", content, true);
 
 /***/ }),
 /* 397 */
@@ -30018,7 +30013,7 @@ var content = __webpack_require__(402);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("00434b3d", content, true);
+var update = __webpack_require__(2)("365ce49d", content, true);
 
 /***/ }),
 /* 402 */
@@ -30321,7 +30316,7 @@ var content = __webpack_require__(411);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("a11aff02", content, true);
+var update = __webpack_require__(2)("35c7723f", content, true);
 
 /***/ }),
 /* 411 */
@@ -30522,7 +30517,7 @@ var content = __webpack_require__(416);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("5b8814b0", content, true);
+var update = __webpack_require__(2)("1cfe6286", content, true);
 
 /***/ }),
 /* 416 */
@@ -30723,7 +30718,7 @@ var content = __webpack_require__(421);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("528a8d57", content, true);
+var update = __webpack_require__(2)("f30f8c2c", content, true);
 
 /***/ }),
 /* 421 */
@@ -31114,7 +31109,7 @@ var content = __webpack_require__(441);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("491c580a", content, true);
+var update = __webpack_require__(2)("5b91329b", content, true);
 
 /***/ }),
 /* 441 */
@@ -31199,7 +31194,7 @@ var content = __webpack_require__(446);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("72f660ee", content, true);
+var update = __webpack_require__(2)("40a97a49", content, true);
 
 /***/ }),
 /* 446 */
@@ -31418,7 +31413,7 @@ var content = __webpack_require__(456);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("bec1b668", content, true);
+var update = __webpack_require__(2)("2bfdaa0c", content, true);
 
 /***/ }),
 /* 456 */
@@ -31503,7 +31498,7 @@ var content = __webpack_require__(461);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("c3a2e700", content, true);
+var update = __webpack_require__(2)("31beec40", content, true);
 
 /***/ }),
 /* 461 */
@@ -31582,7 +31577,7 @@ var content = __webpack_require__(466);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("07a4d36b", content, true);
+var update = __webpack_require__(2)("5b29877e", content, true);
 
 /***/ }),
 /* 466 */
@@ -31670,7 +31665,7 @@ var content = __webpack_require__(471);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("3a680bc9", content, true);
+var update = __webpack_require__(2)("184ecbb6", content, true);
 
 /***/ }),
 /* 471 */
@@ -31738,7 +31733,7 @@ var content = __webpack_require__(475);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("5460ce1a", content, true);
+var update = __webpack_require__(2)("7a263fda", content, true);
 
 /***/ }),
 /* 475 */
@@ -32118,7 +32113,7 @@ var content = __webpack_require__(489);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("8b462aac", content, true);
+var update = __webpack_require__(2)("52c44046", content, true);
 
 /***/ }),
 /* 489 */
@@ -32521,7 +32516,7 @@ var content = __webpack_require__(494);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("056e61aa", content, true);
+var update = __webpack_require__(2)("3df04c10", content, true);
 
 /***/ }),
 /* 494 */
@@ -32855,7 +32850,7 @@ var content = __webpack_require__(511);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("115e0c34", content, true);
+var update = __webpack_require__(2)("397c0319", content, true);
 
 /***/ }),
 /* 511 */
@@ -33128,7 +33123,7 @@ var content = __webpack_require__(521);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("3fa22027", content, true);
+var update = __webpack_require__(2)("50262587", content, true);
 
 /***/ }),
 /* 521 */
@@ -33445,7 +33440,7 @@ var content = __webpack_require__(526);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("351f6c5e", content, true);
+var update = __webpack_require__(2)("5388ea04", content, true);
 
 /***/ }),
 /* 526 */
@@ -33685,7 +33680,7 @@ var content = __webpack_require__(531);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("ff053c22", content, true);
+var update = __webpack_require__(2)("763044fc", content, true);
 
 /***/ }),
 /* 531 */
@@ -34304,7 +34299,7 @@ var content = __webpack_require__(546);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("9ad0dcd8", content, true);
+var update = __webpack_require__(2)("5c875ba7", content, true);
 
 /***/ }),
 /* 546 */
@@ -36593,7 +36588,7 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
     }
   }, [_vm._v("模块化")]), _c('u-sidebar-item', {
     attrs: {
-      "to": "/documentation/concepts/componentization"
+      "to": "/documentation/concepts/component-based"
     }
   }, [_vm._v("组件化")]), _c('u-sidebar-item', {
     attrs: {
@@ -36721,7 +36716,7 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
     { path: 'concepts/introduction', component: () => __webpack_require__.e/* import() */(3).then(__webpack_require__.bind(null, 620)) },
     { path: 'concepts/technical-selection', component: () => __webpack_require__.e/* import() */(1).then(__webpack_require__.bind(null, 621)) },
     { path: 'concepts/modularity', component: () => __webpack_require__.e/* import() */(0).then(__webpack_require__.bind(null, 622)) },
-    { path: 'concepts/componentization', component: () => __webpack_require__.e/* import() */(4).then(__webpack_require__.bind(null, 623)) },
+    { path: 'concepts/component-based', component: () => __webpack_require__.e/* import() */(4).then(__webpack_require__.bind(null, 623)) },
 ]);
 
 
@@ -36921,13 +36916,18 @@ module.exports= function() {
     if(window.HAS_CREATE_FONT_STYLE){
         return;
     }
-    addStyle();
+    window.ICON_FONT_STYLE && addStyle();
     window.HAS_CREATE_FONT_STYLE = true;
 }
 if(false){
-    window.ICON_FONT_STYLE.update = updateStyle;
+    window.ICON_FONT_STYLE && (window.ICON_FONT_STYLE.update = updateStyle);
 }
 
 
 /***/ })
-/******/ ]);
+/******/ ]);/* icon font style message */
+                                if (typeof window !== "undefined" && !window.ICON_FONT_STYLE) {
+                                    window.ICON_FONT_STYLE = {"name":"vusion-icon-font","ttf":{"path":"/public/vusion-icon-font.ttf","md5":"077dce4f1cb44476644d61a91c1ec0d7"},"eot":{"path":"/public/vusion-icon-font.eot","md5":"763e5d5e06c7839a616d874c730e4436"},"woff":{"path":"/public/vusion-icon-font.woff","md5":"26a786356f05852e49b0905e047bb173"},"svg":{"path":"/public/vusion-icon-font.svg","md5":"be17bfef09c5a825325f8ecdb68f4765"}};
+                                } else if (typeof window !== "undefined" && window.ICON_FONT_STYLE && window.ICON_FONT_STYLE.update) {
+                                    window.ICON_FONT_STYLE.update({"name":"vusion-icon-font","ttf":{"path":"/public/vusion-icon-font.ttf","md5":"077dce4f1cb44476644d61a91c1ec0d7"},"eot":{"path":"/public/vusion-icon-font.eot","md5":"763e5d5e06c7839a616d874c730e4436"},"woff":{"path":"/public/vusion-icon-font.woff","md5":"26a786356f05852e49b0905e047bb173"},"svg":{"path":"/public/vusion-icon-font.svg","md5":"be17bfef09c5a825325f8ecdb68f4765"}});
+                                }
