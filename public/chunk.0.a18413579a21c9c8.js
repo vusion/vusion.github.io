@@ -192,11 +192,11 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
     attrs: {
       "href": "https://babeljs.io/"
     }
-  }, [_vm._v("babeljs.io")]), _vm._v("的官方文档。")], 1), _vm._v(" "), _c('h4', [_vm._v("JS的压缩与混淆")]), _vm._v(" "), _c('p', [_vm._v("Webpack通常使用"), _c('u-link', {
+  }, [_vm._v("babeljs.io")]), _vm._v("的官方文档。")], 1), _vm._v(" "), _c('h4', [_vm._v("JS的压缩与混淆")]), _vm._v(" "), _c('p', [_vm._v("在Webpack生态中，通常使用"), _c('u-link', {
     attrs: {
       "href": "https://github.com/webpack-contrib/uglifyjs-webpack-plugin"
     }
-  }, [_vm._v("UglifyjsWebpackPlugin")]), _vm._v("来处理JS的压缩与混淆，这个插件也已经集成在Vusion CLI中。")], 1), _vm._v(" "), _c('p', [_vm._v("只需在"), _c('code', {
+  }, [_vm._v("uglifyjs-webpack-plugin")]), _vm._v("来处理JS的压缩与混淆，这个插件也已经集成在Vusion CLI中。")], 1), _vm._v(" "), _c('p', [_vm._v("只需在"), _c('code', {
     pre: true
   }, [_vm._v("vusion.config.js")]), _vm._v("或"), _c('code', {
     pre: true
@@ -717,7 +717,17 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
     attrs: {
       "class": "hljs-name"
     }
-  }, [_vm._v("style")]), _vm._v(">")]), _vm._v("\n")])]), _vm._v(" "), _c('h4', [_vm._v("ExtractCSS")]), _vm._v(" "), _c('pre', {
+  }, [_vm._v("style")]), _vm._v(">")]), _vm._v("\n")])]), _vm._v(" "), _c('h4', [_vm._v("CSS提取成独立文件")]), _vm._v(" "), _c('p', [_vm._v("在Webpack生态中，通常会使用"), _c('u-link', {
+    attrs: {
+      "href": "https://github.com/webpack-contrib/extract-text-webpack-plugin"
+    }
+  }, [_vm._v("extract-text-webpack-plugin")]), _vm._v("将CSS内容提取成独立的文件，这个插件也已经集成在Vusion CLI中。")], 1), _vm._v(" "), _c('p', [_vm._v("只需在"), _c('code', {
+    pre: true
+  }, [_vm._v("vusion.config.js")]), _vm._v("或"), _c('code', {
+    pre: true
+  }, [_vm._v("package.json")]), _vm._v("的"), _c('code', {
+    pre: true
+  }, [_vm._v("vusion")]), _vm._v("对象中添加配置：")]), _vm._v(" "), _c('pre', {
     pre: true,
     attrs: {
       "class": "hljs lang-json"
@@ -734,7 +744,16 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
     attrs: {
       "class": "hljs-literal"
     }
-  }, [_vm._v("true")]), _vm._v("\n}\n")])]), _vm._v(" "), _c('h3', [_vm._v("图片的模块化")]), _vm._v(" "), _c('p', [_vm._v("由于位图图片在Retina屏下需要设定@2x图，因此我们推荐优先使用svg图片。")]), _vm._v(" "), _c('p', [_vm._v("特别是单色图标可以将svg转成icon-font，多色图标可以将svg合并成svg-sprite，实在不行了再将png或jpg等位图格式合并成css-sprite。")]), _vm._v(" "), _c('h4', [_vm._v("icon-font")]), _vm._v(" "), _c('p', [_vm._v("icon-font可以使用CSS很方便地设置颜色与大小。")]), _vm._v(" "), _c('p', [_vm._v("在Vusion中，我们研发了一个"), _c('u-link', {
+  }, [_vm._v("true")]), _vm._v("\n}\n")])]), _vm._v(" "), _c('p', [_vm._v("也可以在运行CLI的构建命令时，添加--extract-css这个参数：")]), _vm._v(" "), _c('pre', {
+    pre: true,
+    attrs: {
+      "class": "hljs lang-shell"
+    }
+  }, [_c('code', {
+    attrs: {
+      "v-pre": ""
+    }
+  }, [_vm._v("vusion build --extract-css\n")])]), _vm._v(" "), _c('p', [_vm._v("提取出来的CSS文件名与JS bundle的文件名是一致的，仅扩展名不同。")]), _vm._v(" "), _c('h3', [_vm._v("图片的模块化")]), _vm._v(" "), _c('p', [_vm._v("由于位图图片在Retina屏下需要设定@2x图，因此我们推荐优先使用svg图片。")]), _vm._v(" "), _c('p', [_vm._v("特别是单色图标可以将svg转成icon-font，多色图标可以将svg合并成svg-sprite，实在不行了再将png或jpg等位图格式合并成css-sprite。")]), _vm._v(" "), _c('h4', [_vm._v("icon-font")]), _vm._v(" "), _c('p', [_vm._v("icon-font可以使用CSS很方便地设置颜色与大小。")]), _vm._v(" "), _c('p', [_vm._v("在Vusion中，我们研发了一个"), _c('u-link', {
     attrs: {
       "href": "https://github.com/vusion/icon-font-loader/blob/master/README.zh-CN.md"
     }
@@ -993,7 +1012,7 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 
 });/* icon font style message */
                                 if (typeof window !== "undefined" && !window.ICON_FONT_STYLE) {
-                                    window.ICON_FONT_STYLE = {"name":"vusion-icon-font","ttf":{"path":"/public/vusion-icon-font.ttf","md5":"077dce4f1cb44476644d61a91c1ec0d7"},"eot":{"path":"/public/vusion-icon-font.eot","md5":"763e5d5e06c7839a616d874c730e4436"},"woff":{"path":"/public/vusion-icon-font.woff","md5":"26a786356f05852e49b0905e047bb173"},"svg":{"path":"/public/vusion-icon-font.svg","md5":"be17bfef09c5a825325f8ecdb68f4765"}};
+                                    window.ICON_FONT_STYLE = {"name":"vusion-icon-font","ttf":{"path":"/public/vusion-icon-font.ttf","md5":"fb9a46baa44051a16c3a9fa093544dd2"},"eot":{"path":"/public/vusion-icon-font.eot","md5":"6be4e672566174ee4653c0f457b6a643"},"woff":{"path":"/public/vusion-icon-font.woff","md5":"328f67e3156e3dac863257874f66f168"},"svg":{"path":"/public/vusion-icon-font.svg","md5":"9ccbd2a74b9a2f854e4af2528d586532"}};
                                 } else if (typeof window !== "undefined" && window.ICON_FONT_STYLE && window.ICON_FONT_STYLE.update) {
-                                    window.ICON_FONT_STYLE.update({"name":"vusion-icon-font","ttf":{"path":"/public/vusion-icon-font.ttf","md5":"077dce4f1cb44476644d61a91c1ec0d7"},"eot":{"path":"/public/vusion-icon-font.eot","md5":"763e5d5e06c7839a616d874c730e4436"},"woff":{"path":"/public/vusion-icon-font.woff","md5":"26a786356f05852e49b0905e047bb173"},"svg":{"path":"/public/vusion-icon-font.svg","md5":"be17bfef09c5a825325f8ecdb68f4765"}});
+                                    window.ICON_FONT_STYLE.update({"name":"vusion-icon-font","ttf":{"path":"/public/vusion-icon-font.ttf","md5":"fb9a46baa44051a16c3a9fa093544dd2"},"eot":{"path":"/public/vusion-icon-font.eot","md5":"6be4e672566174ee4653c0f457b6a643"},"woff":{"path":"/public/vusion-icon-font.woff","md5":"328f67e3156e3dac863257874f66f168"},"svg":{"path":"/public/vusion-icon-font.svg","md5":"9ccbd2a74b9a2f854e4af2528d586532"}});
                                 }

@@ -46,7 +46,7 @@ npm install --save-dev babel-preset-env
 
 #### JS的压缩与混淆
 
-Webpack通常使用[UglifyjsWebpackPlugin](https://github.com/webpack-contrib/uglifyjs-webpack-plugin)来处理JS的压缩与混淆，这个插件也已经集成在Vusion CLI中。
+在Webpack生态中，通常使用[uglifyjs-webpack-plugin](https://github.com/webpack-contrib/uglifyjs-webpack-plugin)来处理JS的压缩与混淆，这个插件也已经集成在Vusion CLI中。
 
 只需在`vusion.config.js`或`package.json`的`vusion`对象中添加配置：
 
@@ -187,13 +187,25 @@ REA表示Root、Element、Attribute，其中借鉴了BEM（Block、Element、Mod
 </style>
 ```
 
-#### ExtractCSS
+#### CSS提取成独立文件
+
+在Webpack生态中，通常会使用[extract-text-webpack-plugin](https://github.com/webpack-contrib/extract-text-webpack-plugin)将CSS内容提取成独立的文件，这个插件也已经集成在Vusion CLI中。
+
+只需在`vusion.config.js`或`package.json`的`vusion`对象中添加配置：
 
 ``` json
 {
     "extractCSS": true
 }
 ```
+
+也可以在运行CLI的构建命令时，添加--extract-css这个参数：
+
+``` shell
+vusion build --extract-css
+```
+
+提取出来的CSS文件名与JS bundle的文件名是一致的，仅扩展名不同。
 
 ### 图片的模块化
 
