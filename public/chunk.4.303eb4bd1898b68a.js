@@ -1,4 +1,4 @@
-webpackJsonp([3],{
+webpackJsonp([4],{
 
 /***/ 619:
 /***/ (function(module, exports, __webpack_require__) {
@@ -73,16 +73,16 @@ if(false){
 /***/ 620:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(625);
+module.exports = __webpack_require__(626);
 
 /***/ }),
 
-/***/ 625:
+/***/ 626:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__vusion_cli_node_modules_vusion_vue_loader_lib_template_compiler_index_id_data_v_2a90342c_hasScoped_false_vusion_cli_node_modules_vusion_vue_loader_lib_selector_type_template_index_0_node_modules_vue_markdown_loader_lib_markdown_compiler_js_raw_introduction_md__ = __webpack_require__(626);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__vusion_cli_node_modules_vusion_vue_loader_lib_template_compiler_index_id_data_v_2a90342c_hasScoped_false_vusion_cli_node_modules_vusion_vue_loader_lib_selector_type_template_index_0_node_modules_vue_markdown_loader_lib_markdown_compiler_js_raw_introduction_md__ = __webpack_require__(627);
 var normalizeComponent = __webpack_require__(6)
 /* script */
 var __vue_script__ = null
@@ -107,12 +107,12 @@ var Component = normalizeComponent(
 
 /***/ }),
 
-/***/ 626:
+/***/ 627:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('u-article', [_c('h1', [_vm._v("介绍")]), _vm._v(" "), _c('h3', [_vm._v("Vusion是什么？")]), _vm._v(" "), _c('p', [_vm._v("Vusion是基于Webpack+Vue的一整套前端解决方案，包括架构模型、开发规范、组件平台、工程模板、命令行工具和可视化工具等一系列配套设施。")]), _vm._v(" "), _c('p', [_vm._v("这是我们团队多年前端实践经验的研究成果，可以让您快速搭建各种类型的前端项目，避免迷茫的技术选型与烦琐的项目配置。Vusion已经帮您在前端架构的各个层面选择好了解决方法，如Webpack常用loader和plugin的选择、CSS模块化方案、组件扩展机制、组件库平台、Mock数据、测试框架的选择等，但同时并没有完全限制架构模型的扩展，您依然可以按照Webpack的配置方式与Vue的生态体系继续改进项目。")]), _vm._v(" "), _c('h4', [_vm._v("Vusion包含以下工具")]), _vm._v(" "), _c('ul', [_c('li', [_vm._v("Vusion App")]), _vm._v(" "), _c('li', [_vm._v("Vusion CLI")]), _vm._v(" "), _c('li', [_vm._v("Vukoa CLI")])]), _vm._v(" "), _c('h4', [_vm._v("Vusion默认有两套组件库")]), _vm._v(" "), _c('ul', [_c('li', [_vm._v("Vusion UI")]), _vm._v(" "), _c('li', [_vm._v("Proto UI")])]), _vm._v(" "), _c('h4', [_vm._v("Vusion目前支持的项目类型有")]), _vm._v(" "), _c('ul', [_c('li', [_vm._v("Library")]), _vm._v(" "), _c('li', [_vm._v("WebApp")])]), _vm._v(" "), _c('p', [_vm._v("Vusion具体解决了哪些架构问题，采用了哪些技术方案，后面的章节将会详细展开。")])])
+  return _c('u-article', [_c('h1', [_vm._v("介绍")]), _vm._v(" "), _c('h3', [_vm._v("Vusion是什么？")]), _vm._v(" "), _c('p', [_vm._v("Vusion是基于Webpack+Vue的一整套前端解决方案，包括架构模型、开发规范、组件平台、工程模板、命令行工具和可视化工具等一系列配套设施。")]), _vm._v(" "), _c('p', [_vm._v("这是我们团队多年前端实践经验的研究成果，可以让您快速搭建各种类型的前端项目，避免迷茫的技术选型与烦琐的项目配置。Vusion已经帮您在前端架构的各个层面选择好了解决方法，如Webpack常用loader和plugin的选择、CSS模块化方案、组件扩展机制、组件库平台、Mock数据、测试框架的选择等，但同时并没有完全限制架构模型的扩展，您依然可以按照Webpack的配置方式与Vue的生态体系继续改进项目。")]), _vm._v(" "), _c('h4', [_vm._v("Vusion包含以下工具")]), _vm._v(" "), _c('ul', [_c('li', [_vm._v("Vusion App")]), _vm._v(" "), _c('li', [_vm._v("Vusion CLI")]), _vm._v(" "), _c('li', [_vm._v("Vukoa CLI")])]), _vm._v(" "), _c('h4', [_vm._v("Vusion默认有两套组件库")]), _vm._v(" "), _c('ul', [_c('li', [_vm._v("Vusion UI")]), _vm._v(" "), _c('li', [_vm._v("Proto UI")])]), _vm._v(" "), _c('h4', [_vm._v("Vusion目前支持的项目类型有")]), _vm._v(" "), _c('ul', [_c('li', [_vm._v("Library")]), _vm._v(" "), _c('li', [_vm._v("WebApp")])]), _vm._v(" "), _c('p', [_vm._v("Vusion具体解决了哪些架构问题，采用了哪些技术方案，下面的章节将会详细展开。")]), _vm._v(" "), _c('p', [_c('em', [_vm._v("接下来的一系列内容需要您有较多的前端开发经验，并对Vue有基本的理解，不是很推荐新手直接阅读。")])])])
 }
 var staticRenderFns = []
 var esExports = { render: render, staticRenderFns: staticRenderFns }
@@ -122,7 +122,7 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 
 });/* icon font style message */
                                 if (typeof window !== "undefined" && !window.ICON_FONT_STYLE) {
-                                    window.ICON_FONT_STYLE = {"name":"vusion-icon-font","ttf":{"path":"/public/vusion-icon-font.ttf","md5":"fb9a46baa44051a16c3a9fa093544dd2"},"eot":{"path":"/public/vusion-icon-font.eot","md5":"6be4e672566174ee4653c0f457b6a643"},"woff":{"path":"/public/vusion-icon-font.woff","md5":"328f67e3156e3dac863257874f66f168"},"svg":{"path":"/public/vusion-icon-font.svg","md5":"9ccbd2a74b9a2f854e4af2528d586532"}};
+                                    window.ICON_FONT_STYLE = {"name":"vusion-icon-font","ttf":{"path":"/public/vusion-icon-font.ttf","md5":"dbfe67b41512663e89eac9cb56cc0b07"},"eot":{"path":"/public/vusion-icon-font.eot","md5":"657d000c700305d2f814d8d2b3f4d5d5"},"woff":{"path":"/public/vusion-icon-font.woff","md5":"6ced19e2a63afc6a568ed4ceca752b69"},"svg":{"path":"/public/vusion-icon-font.svg","md5":"be17bfef09c5a825325f8ecdb68f4765"}};
                                 } else if (typeof window !== "undefined" && window.ICON_FONT_STYLE && window.ICON_FONT_STYLE.update) {
-                                    window.ICON_FONT_STYLE.update({"name":"vusion-icon-font","ttf":{"path":"/public/vusion-icon-font.ttf","md5":"fb9a46baa44051a16c3a9fa093544dd2"},"eot":{"path":"/public/vusion-icon-font.eot","md5":"6be4e672566174ee4653c0f457b6a643"},"woff":{"path":"/public/vusion-icon-font.woff","md5":"328f67e3156e3dac863257874f66f168"},"svg":{"path":"/public/vusion-icon-font.svg","md5":"9ccbd2a74b9a2f854e4af2528d586532"}});
+                                    window.ICON_FONT_STYLE.update({"name":"vusion-icon-font","ttf":{"path":"/public/vusion-icon-font.ttf","md5":"dbfe67b41512663e89eac9cb56cc0b07"},"eot":{"path":"/public/vusion-icon-font.eot","md5":"657d000c700305d2f814d8d2b3f4d5d5"},"woff":{"path":"/public/vusion-icon-font.woff","md5":"6ced19e2a63afc6a568ed4ceca752b69"},"svg":{"path":"/public/vusion-icon-font.svg","md5":"be17bfef09c5a825325f8ecdb68f4765"}});
                                 }

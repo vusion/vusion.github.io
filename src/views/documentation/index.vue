@@ -7,7 +7,7 @@
                     <u-sidebar-item to="/documentation/concepts/technical-selection">技术选型</u-sidebar-item>
                     <u-sidebar-item to="/documentation/concepts/modularity">模块化</u-sidebar-item>
                     <u-sidebar-item to="/documentation/concepts/component-based">组件化</u-sidebar-item>
-                    <u-sidebar-item to="/documentation/concepts/2">组件库</u-sidebar-item>
+                    <u-sidebar-item to="/documentation/concepts/library">组件库</u-sidebar-item>
                     <u-sidebar-item to="/documentation/concepts/3">目录结构</u-sidebar-item>
                     <u-sidebar-item to="/documentation/concepts/3">路由</u-sidebar-item>
                     <u-sidebar-item to="/documentation/concepts/3">服务</u-sidebar-item>

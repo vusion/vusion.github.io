@@ -73,16 +73,16 @@ if(false){
 /***/ 621:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(627);
+module.exports = __webpack_require__(628);
 
 /***/ }),
 
-/***/ 627:
+/***/ 628:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__vusion_cli_node_modules_vusion_vue_loader_lib_template_compiler_index_id_data_v_33c9b2ca_hasScoped_false_vusion_cli_node_modules_vusion_vue_loader_lib_selector_type_template_index_0_node_modules_vue_markdown_loader_lib_markdown_compiler_js_raw_technical_selection_md__ = __webpack_require__(628);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__vusion_cli_node_modules_vusion_vue_loader_lib_template_compiler_index_id_data_v_33c9b2ca_hasScoped_false_vusion_cli_node_modules_vusion_vue_loader_lib_selector_type_template_index_0_node_modules_vue_markdown_loader_lib_markdown_compiler_js_raw_technical_selection_md__ = __webpack_require__(629);
 var normalizeComponent = __webpack_require__(6)
 /* script */
 var __vue_script__ = null
@@ -107,7 +107,7 @@ var Component = normalizeComponent(
 
 /***/ }),
 
-/***/ 628:
+/***/ 629:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -122,7 +122,7 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
     pre: true
   }, [_vm._v("shouldComponentUpdate")]), _vm._v("来做一些性能优化。Angular中也是类似，随着组件规模的扩大，需要时刻留意组件脏检查产生潜在的性能问题。")]), _vm._v(" "), _c('p', [_vm._v("而在Vue中，这一切都由依赖管理帮开发者解决了。我们挑选框架时，一个很重要的参考点就是该框架能不能填更多的坑，将许多框架层面的细节隐藏起来，尽可能减少开发者的关注度，让我们把更多精力放在业务逻辑层面。")]), _vm._v(" "), _c('h3', [_vm._v("模板、逻辑、样式的分离")]), _vm._v(" "), _c('p', [_vm._v("JSX + CSS-in-JS 违反了模板、逻辑、样式的分离原则，将这三者杂揉在了一起，全部转为JavaScript的开发模式。虽然这种方式能较大地提高组件开发的灵活性，但失去了声明式模板的直观感受与CSS样式表的许多特性，这是得不偿失的。同时也失去了单独将模板与样式进行结合做可视化编辑的可能。")]), _vm._v(" "), _c('h3', [_vm._v("学习曲线")]), _vm._v(" "), _c('p', [_vm._v("Vue的文档很完善，API设计简洁、灵活，解决了许多前端常见的问题，学习曲线毋庸置疑是最平缓的。")]), _vm._v(" "), _c('h2', [_vm._v("Webpack")]), _vm._v(" "), _c('h3', [_vm._v("Webpack是什么？")]), _vm._v(" "), _c('blockquote', [_c('p', [_vm._v("Webpack = Module Building System")])]), _vm._v(" "), _c('p', [_vm._v("简单来说，Webpack就是把有各种依赖关系的源文件打包成一系列静态资源的一个打包器。")]), _vm._v(" "), _c('p', [_c('img', {
     attrs: {
-      "src": __webpack_require__(629),
+      "src": __webpack_require__(630),
       "alt": ""
     }
   })]), _vm._v(" "), _c('p', [_vm._v("在ES6出现之前，JavaScript一直没有像java或python的import这样的模块体系，这对开发大型复杂的前端工程造成了巨大的障碍。同时，前端还需要处理CSS、png、svg、webfonts等非JS的静态资源，往往这些文件之间也有许多依赖关系。而Webpack很好地解决了这些问题。")]), _vm._v(" "), _c('p', [_vm._v("与此同时，Webpack在打包速度、热更新、代理服务方面也处理得非常好，Webpack的loaders和plugins也很健全。")]), _vm._v(" "), _c('p', [_vm._v("因此Webpack已经基本成为目前前端项目的标配构建工具了。")]), _vm._v(" "), _c('p', [_vm._v("接下来的“模块化”一节将会详细讲述Webpack在处理前端各种静态资源的强大优势，以及Vusion在使用Webpack时具体的配置策略。")])])
@@ -133,7 +133,7 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 
 /***/ }),
 
-/***/ 629:
+/***/ 630:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "webpack-bundler.d734657deb967f3e.jpg";
@@ -142,7 +142,7 @@ module.exports = __webpack_require__.p + "webpack-bundler.d734657deb967f3e.jpg";
 
 });/* icon font style message */
                                 if (typeof window !== "undefined" && !window.ICON_FONT_STYLE) {
-                                    window.ICON_FONT_STYLE = {"name":"vusion-icon-font","ttf":{"path":"/public/vusion-icon-font.ttf","md5":"fb9a46baa44051a16c3a9fa093544dd2"},"eot":{"path":"/public/vusion-icon-font.eot","md5":"6be4e672566174ee4653c0f457b6a643"},"woff":{"path":"/public/vusion-icon-font.woff","md5":"328f67e3156e3dac863257874f66f168"},"svg":{"path":"/public/vusion-icon-font.svg","md5":"9ccbd2a74b9a2f854e4af2528d586532"}};
+                                    window.ICON_FONT_STYLE = {"name":"vusion-icon-font","ttf":{"path":"/public/vusion-icon-font.ttf","md5":"dbfe67b41512663e89eac9cb56cc0b07"},"eot":{"path":"/public/vusion-icon-font.eot","md5":"657d000c700305d2f814d8d2b3f4d5d5"},"woff":{"path":"/public/vusion-icon-font.woff","md5":"6ced19e2a63afc6a568ed4ceca752b69"},"svg":{"path":"/public/vusion-icon-font.svg","md5":"be17bfef09c5a825325f8ecdb68f4765"}};
                                 } else if (typeof window !== "undefined" && window.ICON_FONT_STYLE && window.ICON_FONT_STYLE.update) {
-                                    window.ICON_FONT_STYLE.update({"name":"vusion-icon-font","ttf":{"path":"/public/vusion-icon-font.ttf","md5":"fb9a46baa44051a16c3a9fa093544dd2"},"eot":{"path":"/public/vusion-icon-font.eot","md5":"6be4e672566174ee4653c0f457b6a643"},"woff":{"path":"/public/vusion-icon-font.woff","md5":"328f67e3156e3dac863257874f66f168"},"svg":{"path":"/public/vusion-icon-font.svg","md5":"9ccbd2a74b9a2f854e4af2528d586532"}});
+                                    window.ICON_FONT_STYLE.update({"name":"vusion-icon-font","ttf":{"path":"/public/vusion-icon-font.ttf","md5":"dbfe67b41512663e89eac9cb56cc0b07"},"eot":{"path":"/public/vusion-icon-font.eot","md5":"657d000c700305d2f814d8d2b3f4d5d5"},"woff":{"path":"/public/vusion-icon-font.woff","md5":"6ced19e2a63afc6a568ed4ceca752b69"},"svg":{"path":"/public/vusion-icon-font.svg","md5":"be17bfef09c5a825325f8ecdb68f4765"}});
                                 }
