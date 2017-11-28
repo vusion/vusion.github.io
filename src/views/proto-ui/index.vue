@@ -1,7 +1,7 @@
 <template>
     <div>
         <div :class="$style.side">
-            <u-sidebar size="small">
+            <u-sidebar>
                 <u-sidebar-item><u-checkbox v-model="advanced" @check="onCheck">显示所有组件</u-checkbox></u-sidebar-item>
                 <u-sidebar-group title="Basic">
                     <u-sidebar-item exact to="/proto-ui/base">基础 <small>Base</small></u-sidebar-item>

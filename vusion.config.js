@@ -4,10 +4,6 @@ const hljs = require('highlight.js');
 const hashSum = require('hash-sum');
 const iterator = require('markdown-it-for-inline');
 
-let theme = path.basename(process.cwd());
-if (theme === 'src')
-    theme = 'theme-default';
-
 module.exports = {
     type: 'app',
     webpack: {

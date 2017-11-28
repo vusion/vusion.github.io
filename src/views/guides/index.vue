@@ -2,10 +2,10 @@
     <div>
         <div :class="$style.side">
             <u-sidebar size="small">
-                <u-sidebar-group text="入门">
+                <u-sidebar-group title="入门">
+                    <u-sidebar-item to="/guides/introduction">介绍</u-sidebar-item>
                     <u-sidebar-item to="/guides/installation">安装</u-sidebar-item>
-                    <u-sidebar-item to="/guides/af">介绍</u-sidebar-item>
-                    <u-sidebar-item to="/guides/af">工程</u-sidebar-item>
+                    <u-sidebar-item to="/guides/quickstart">起步</u-sidebar-item>
                     <u-sidebar-item to="/guides/af">页面</u-sidebar-item>
                     <u-sidebar-item to="/guides/af">组件</u-sidebar-item>
                     <u-sidebar-item to="/guides/af">组件库</u-sidebar-item>
@@ -14,15 +14,15 @@
                     <u-sidebar-item to="/guides/af">模块</u-sidebar-item>
                     <u-sidebar-item to="/guides/af">发布</u-sidebar-item>
                 </u-sidebar-group>
-                <u-sidebar-group text="高级">
+                <!-- <u-sidebar-group title="高级">
                     <u-sidebar-item to="/guides/af">介绍</u-sidebar-item>
                     <u-sidebar-item to="/guides/af">配置</u-sidebar-item>
-                    <u-sidebar-item to="/guides/">打包</u-sidebar-item>
+                    <u-sidebar-item to="/guides/wefef">打包</u-sidebar-item>
                 </u-sidebar-group>
-                <u-sidebar-group text="全栈">
+                <u-sidebar-group title="全栈">
                     <u-sidebar-item to="/guides/af">介绍</u-sidebar-item>
                     <u-sidebar-item to="/guides/vweeve">配置</u-sidebar-item>
-                </u-sidebar-group>
+                </u-sidebar-group> -->
             </u-sidebar>
         </div>
         <div :class="$style.main">
@@ -57,6 +57,7 @@ export default {
     bottom: 0;
     /* height: calc(100vh - 134px); */
     background: #f0f6fa;
+    color: #34495e;
     overflow: auto;
 }
 

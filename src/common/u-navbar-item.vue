@@ -1,11 +1,11 @@
 <script>
-import NavbarItem from 'cloud-ui.vusion/src/u-navbar-item.vue';
+import NavbarItem from 'proto-ui.vusion/src/u-navbar-item.vue';
 
 export default NavbarItem;
 </script>
 
 <style module>
-@import 'cloud-ui.vusion/src/u-navbar-item.vue/module.css';
+@import 'proto-ui.vusion/src/u-navbar-item.vue/module.css';
 
 .root {
     color: inherit;

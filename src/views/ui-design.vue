@@ -48,6 +48,7 @@ export default {
     bottom: 0;
     /* height: calc(100vh - 134px); */
     background: #f0f6fa;
+    color: #34495e;
     overflow: auto;
 }
 

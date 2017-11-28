@@ -2,70 +2,34 @@ import Vue from 'vue';
 import Layout from './views/layout.vue';
 import Index from './views/index.vue';
 import Features from './views/index.md';
-import Guides from './views/guides/index.vue';
 
-import Documentation from './views/documentation/index.vue';
-import documentationRoutes from './views/documentation/routes';
+import Guides from './views/guides/index.vue';
+import guidesRoutes from './views/guides/routes';
+import Concepts from './views/concepts/index.vue';
+import conceptsRoutes from './views/concepts/routes';
+import Configuration from './views/configuration/index.vue';
+import configurationRoutes from './views/configuration/routes';
 
 import UIDesign from './views/ui-design.vue';
-import ProtoUI from './views/proto-ui.vue';
+
+import ProtoUI from './views/proto-ui/index.vue';
+import protoUIRoutes from './views/proto-ui/routes';
+
 import Libraries from './views/libraries.vue';
 
 const Empty = Vue.extend({ template: '<div>待完善...</div>' });
 
 export default [
     { path: '/', component: Layout, children: [
-        { path: '', component: Index, redirect: '/documentation' },
-        { path: 'features', component: Features },
-        { path: 'guides', component: Guides, children: [
-            { path: 'installation', component: () => import('./views/guides/installation.md') },
-        ] },
-        { path: 'documentation', component: Documentation, children: documentationRoutes },
+        { path: '', component: Index, redirect: '/guides' },
+        // { path: 'features', component: Features },
+        { path: 'guides', component: Guides, children: guidesRoutes },
+        { path: 'concepts', component: Concepts, children: conceptsRoutes },
+        { path: 'configuration', component: Configuration, children: configurationRoutes },
         { path: 'ui-design', component: UIDesign },
-        { path: 'proto-ui', component: ProtoUI, children: [
-            { path: '', redirect: 'base' },
-            /* Basic */
-            { path: 'base', component: () => import('proto-ui.vusion/src/base/README.md') },
-            { path: 'u-link', component: () => import('proto-ui.vusion/src/u-link.vue/README.md') },
-            { path: 'u-button', component: () => import('proto-ui.vusion/src/u-button.vue/README.md') },
-            { path: 'u-badge', component: () => import('proto-ui.vusion/src/u-badge.vue/README.md') },
-            { path: 'u-label', component: () => import('proto-ui.vusion/src/u-label.vue/README.md') },
-            { path: 'u-icon', component: () => import('proto-ui.vusion/src/u-icon.vue/README.md') },
-            { path: 'u-logo', component: () => import('proto-ui.vusion/src/u-logo.vue/README.md') },
-            /* Layout */
-            { path: 'u-linear-layout', component: () => import('proto-ui.vusion/src/u-linear-layout.vue/README.md') },
-            { path: 'u-grid-layout', component: () => import('proto-ui.vusion/src/u-grid-layout.vue/README.md') },
-            /* Navigation */
-            { path: 'u-navbar', component: () => import('proto-ui.vusion/src/u-navbar.vue/README.md') },
-            { path: 'u-sidebar', component: () => import('proto-ui.vusion/src/u-sidebar.vue/README.md') },
-            { path: 'u-tabs', component: () => import('proto-ui.vusion/src/u-tabs.vue/README.md') },
-            { path: 'u-pagination', component: () => import('proto-ui.vusion/src/u-pagination.vue/README.md') },
-            /* Form */
-            { path: 'u-input', component: () => import('proto-ui.vusion/src/u-input.vue/README.md') },
-            { path: 'u-textarea', component: () => import('proto-ui.vusion/src/u-textarea.vue/README.md') },
-            { path: 'u-radios', component: () => import('proto-ui.vusion/src/u-radios.vue/README.md') },
-            { path: 'u-radio--0', component: () => import('proto-ui.vusion/src/u-radio--0.vue/README.md') },
-            { path: 'u-checkboxes', component: () => import('proto-ui.vusion/src/u-checkboxes.vue/README.md') },
-            { path: 'u-checkbox--0', component: () => import('proto-ui.vusion/src/u-checkbox--0.vue/README.md') },
-            { path: 'u-switch', component: () => import('proto-ui.vusion/src/u-switch.vue/README.md') },
-            { path: 'u-select', component: () => import('proto-ui.vusion/src/u-select.vue/README.md') },
-            { path: 'u-field', component: () => import('proto-ui.vusion/src/u-field.vue/README.md') },
-            { path: 'u-form', component: () => import('proto-ui.vusion/src/u-form.vue/README.md') },
-            /* Data */
-            { path: 'u-list-view', component: () => import('proto-ui.vusion/src/u-list-view.vue/README.md') },
-            { path: 'u-tree-view', component: () => import('proto-ui.vusion/src/u-tree-view.vue/README.md') },
-            /* Popper */
-            { path: 'u-popper', component: () => import('proto-ui.vusion/src/u-popper.vue/README.md') },
-            /* Progress & Chart */
-            { path: 'u-linear-progress', component: () => import('proto-ui.vusion/src/u-linear-progress.vue/README.md') },
-            { path: 'u-circular-progress', component: () => import('proto-ui.vusion/src/u-circular-progress.vue/README.md') },
-            /* Mixin & Utils */
-            { path: 'u-emitter', component: () => import('proto-ui.vusion/src/u-emitter.vue/README.md') },
-            { path: 'u-router-item', component: () => import('proto-ui.vusion/src/u-router-item.vue/README.md') },
-            { path: 'u-collapse-transition', component: () => import('proto-ui.vusion/src/u-collapse-transition.vue/README.md') },
-        ] },
+        { path: 'proto-ui', component: ProtoUI, children: protoUIRoutes },
         { path: 'libraries', component: Libraries },
         { path: 'examples', component: Empty },
     ] },
-    { path: '*', redirect: '/documentation' },
+    { path: '*', redirect: '/guides' },
 ];

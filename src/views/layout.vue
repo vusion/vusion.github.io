@@ -4,11 +4,11 @@
         <u-logo slot="left" name="163yun"></u-logo>
         <u-navbar-item to="/guides">指南</u-navbar-item>
         <u-navbar-item to="/concepts">概念</u-navbar-item>
-        <u-navbar-item to="/documentation">配置</u-navbar-item>
+        <u-navbar-item to="/configuration">配置</u-navbar-item>
         <u-navbar-item to="/ui-design">组件设计</u-navbar-item>
         <u-navbar-item to="/proto-ui">原型组件</u-navbar-item>
         <u-navbar-item to="/libraries">组件库</u-navbar-item>
-        <u-navbar-item to="/examples">示例</u-navbar-item>
+        <u-navbar-item to="/cases">案例</u-navbar-item>
     </u-navbar>
     <div :class="$style.body" v-if="isLibraries" slot="body">
         <div :class="$style.wrap"><router-view></router-view></div>

@@ -1,0 +1,42 @@
+<template>
+    <div>
+        <div :class="$style.side">
+            <u-sidebar>
+                <u-sidebar-item to="/concepts/technical-selection">技术选型</u-sidebar-item>
+                <u-sidebar-item to="/concepts/modularity">模块化</u-sidebar-item>
+                <u-sidebar-item to="/concepts/component-based">组件化</u-sidebar-item>
+                <u-sidebar-item to="/concepts/library">组件库</u-sidebar-item>
+                <u-sidebar-item to="/concepts/3">目录结构</u-sidebar-item>
+                <u-sidebar-item to="/concepts/3">路由</u-sidebar-item>
+                <u-sidebar-item to="/concepts/3">服务</u-sidebar-item>
+                <u-sidebar-item to="/concepts/3">组件文档</u-sidebar-item>
+                <u-sidebar-item to="/concepts/3">接口文档</u-sidebar-item>
+                <u-sidebar-item to="/concepts/3">测试</u-sidebar-item>
+                <u-sidebar-item to="/concepts/3">服务端渲染</u-sidebar-item>
+                <u-sidebar-item to="/concepts/3">打包与部署</u-sidebar-item>
+            </u-sidebar>
+        </div>
+        <div :class="$style.main">
+            <router-view></router-view>
+        </div>
+    </div>
+</template>
+
+<style module>
+.side {
+    padding: 20px 0;
+    position: fixed;
+    width: 200px;
+    top: 64px;
+    bottom: 0;
+    /* height: calc(100vh - 134px); */
+    background: #f0f6fa;
+    color: #34495e;
+    overflow: auto;
+}
+
+.main {
+    margin-left: 200px;
+    padding: 40px;
+}
+</style>
