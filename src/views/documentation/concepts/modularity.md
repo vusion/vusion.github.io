@@ -74,14 +74,14 @@ vusion build --uglify-js
 
 在单文件Vue中，在`<style>`上直接添加`module`，同时在模板中动态绑定class：
 
-``` html
+``` xhtml
 <template>
 <p :class="$style.red">
     This should be red.
 </p>
 </template>
-
-<style module>
+```
+<!-- style module>
 .red {
     color: red;
 }
@@ -89,8 +89,7 @@ vusion build --uglify-js
 .bold {
     font-weight: bold;
 }
-</style>
-```
+</style -->
 
 这些样式会转为
 
@@ -144,8 +143,8 @@ REA表示Root、Element、Attribute，其中借鉴了BEM（Block、Element、Mod
     </div>
 </div>
 </template>
-
-<style>
+```
+<!-- style>
 .root {
     width: 240px;
 }
@@ -168,8 +167,7 @@ REA表示Root、Element、Attribute，其中借鉴了BEM（Block、Element、Mod
 .root[active] .trail {
     animation: ...
 }
-</style>
-```
+</style -->
 
 #### 优先级问题[\<issue\>](https://github.com/vusion/vusion-cli/issues/21)
 
@@ -179,13 +177,12 @@ REA表示Root、Element、Attribute，其中借鉴了BEM（Block、Element、Mod
 <template>
 <u-button :class="$style.button">Button</u-button>
 </template>
-
-<style module>
+```
+<!-- style module>
 .button[class] {
     color: red;
 }
-</style>
-```
+</style -->
 
 #### CSS提取成独立文件
 
@@ -291,3 +288,7 @@ svg-sprite拥有css-sprite不具备的调整大小特性。
 #### 其他资源
 
 其他资源会统一走[file-loader](https://github.com/webpack-contrib/file-loader)，目前已配置了`png|jpg|gif|eot|ttf|woff|woff2`这些格式[\<code\>](https://github.com/vusion/vusion-cli/blob/develop/webpack/base.js#L88)。
+
+###
+
+模块化解决了前端工程中各种资源的组织问题，那么在用户界面（UI）层面上，如何将一个复杂工程进行分解复用，并进行高效的管理，这就属于组件化方面的范畴了，下一节将会为您详细讲述。

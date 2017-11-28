@@ -3,7 +3,10 @@
     <u-navbar slot="head">
         <u-logo slot="left" name="163yun"></u-logo>
         <u-navbar-item to="/guides">指南</u-navbar-item>
-        <u-navbar-item to="/documentation">文档</u-navbar-item>
+        <u-navbar-item to="/concepts">概念</u-navbar-item>
+        <u-navbar-item to="/documentation">配置</u-navbar-item>
+        <u-navbar-item to="/ui-design">组件设计</u-navbar-item>
+        <u-navbar-item to="/proto-ui">原型组件</u-navbar-item>
         <u-navbar-item to="/libraries">组件库</u-navbar-item>
         <u-navbar-item to="/examples">示例</u-navbar-item>
     </u-navbar>

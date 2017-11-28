@@ -1,6 +1,7 @@
 const path = require('path');
 const hljs = require('highlight.js');
-const codeActivator = require('./lib/code-activator');
+
+const hashSum = require('hash-sum');
 const iterator = require('markdown-it-for-inline');
 
 let theme = path.basename(process.cwd());
@@ -18,38 +19,63 @@ module.exports = {
             path: path.resolve(__dirname, './public'),
             publicPath: '/public/',
         },
+        resolve: {
+            EXTENDS: true,
+            alias: {
+                EXTENDS: true,
+                library$: path.resolve(process.cwd(), 'index.js'),
+            },
+        },
         module: {
             EXTENDS: true,
             rules: [
                 'EXTENDS',
-                { test: /\.md$/, loader: 'vue-markdown-loader', options: {
-                    langPrefix: 'lang-',
-                    html: true,
-                    wrapper: 'u-article',
-                    preprocess(markdownIt, source) {
-                        const result = codeActivator.activate(source);
-                        return result.markdown;
-                    },
-                    highlight(str, rawLang) {
-                        let lang = rawLang;
-                        if (rawLang === 'vue')
-                            lang = 'html';
+                {
+                    test: /\.md$/,
+                    use: [{
+                        loader: 'vue-loader',
+                        options: {
+                            preserveWhitespace: false,
+                        },
+                    }, {
+                        loader: 'vue-md-loader',
+                        options: {
+                            wrapper: 'u-article',
+                            livePattern: {
+                                exec: (content) => [content, 'anonymous-' + hashSum(content)],
+                            },
+                            liveTemplateProcessor(template) {
+                                // Remove whitespace between tags
+                                template = template.trim().replace(/>\s+</g, '><');
+                                return `<div class="u-example">${template}</div>`;
+                            },
+                            markdown: {
+                                langPrefix: 'lang-',
+                                html: true,
+                                highlight(str, rawLang) {
+                                    let lang = rawLang;
+                                    if (rawLang === 'vue')
+                                        lang = 'html';
 
-                        if (lang && hljs.getLanguage(lang)) {
-                            try {
-                                const result = hljs.highlight(lang, str).value;
-                                return `<pre class="hljs ${this.langPrefix}${rawLang}"><code>${result}</code></pre>`;
-                            } catch (e) {}
-                        }
+                                    if (lang && hljs.getLanguage(lang)) {
+                                        try {
+                                            const result = hljs.highlight(lang, str).value;
+                                            return `<pre class="hljs ${this.langPrefix}${rawLang}"><code>${result}</code></pre>`;
+                                        } catch (e) {}
+                                    }
 
-                        const result = this.utils ? this.utils.escapeHtml(str) : str;
-                        return `<pre class="hljs"><code>${result}</code></pre>`;
-                    },
-                    use: [
-                        [iterator, 'link_converter', 'link_open', (tokens, idx) => tokens[idx].tag = 'u-link'],
-                        [iterator, 'link_converter', 'link_close', (tokens, idx) => tokens[idx].tag = 'u-link'],
-                    ],
-                } },
+                                    return '';
+                                    // const result = this.utils.escapeHtml(str);
+                                    // return `<pre class="hljs"><code>${result}</code></pre>`;
+                                },
+                            },
+                            plugins: [
+                                [iterator, 'link_converter', 'link_open', (tokens, idx) => tokens[idx].tag = 'u-link'],
+                                [iterator, 'link_converter', 'link_close', (tokens, idx) => tokens[idx].tag = 'u-link'],
+                            ],
+                        },
+                    }],
+                },
             ],
         },
     },

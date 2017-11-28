@@ -2,7 +2,7 @@
     <div>
         <div :class="$style.side">
             <u-sidebar size="small">
-                <u-sidebar-group title="Basic">
+                <u-sidebar-group text="Basic">
                     <u-sidebar-item to="/components/u-base">基础 <small>Base</small></u-sidebar-item>
                     <u-sidebar-item to="/components/u-link">链接 <small>Link</small></u-sidebar-item>
                     <u-sidebar-item to="/components/u-button">按钮 <small>Button</small></u-sidebar-item>
@@ -13,7 +13,7 @@
                     <u-sidebar-item to="/components/u-status-icon">状态图标 <small>StatusIcon</small></u-sidebar-item>
                     <u-sidebar-item to="/components/u-logo">标识 <small>Logo</small></u-sidebar-item>
                 </u-sidebar-group>
-                <u-sidebar-group title="Layout">
+                <u-sidebar-group text="Layout">
                     <u-sidebar-item to="/components/u-linear-layout">线性布局 <small>LinearLayout</small></u-sidebar-item>
                     <u-sidebar-item to="/components/u-grid">栅格 <small>Grid</small></u-sidebar-item>
                 </u-sidebar-group>

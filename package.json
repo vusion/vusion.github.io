@@ -25,9 +25,10 @@
     "solution"
   ],
   "dependencies": {
-    "cloud-ui.vusion": "~0.1.0",
+    "proto-ui.vusion": "~0.1.0",
     "vue": "^2.4.0",
-    "vue-router": "^2.7.0"
+    "vue-router": "^2.7.0",
+    "vusion-utils": "^0.1.0"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
@@ -38,7 +39,7 @@
     "husky": "^0.13.3",
     "markdown-it-for-inline": "^0.1.1",
     "shelljs": "^0.7.8",
-    "vue-markdown-loader": "^2.2.1",
+    "vue-md-loader": "^0.2.0",
     "vusion-hooks": "^0.1.0"
   }
 }

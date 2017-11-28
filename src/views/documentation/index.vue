@@ -2,7 +2,7 @@
     <div>
         <div :class="$style.side">
             <u-sidebar size="small">
-                <u-sidebar-group title="概念">
+                <u-sidebar-group text="概念">
                     <u-sidebar-item to="/documentation/concepts/introduction">介绍</u-sidebar-item>
                     <u-sidebar-item to="/documentation/concepts/technical-selection">技术选型</u-sidebar-item>
                     <u-sidebar-item to="/documentation/concepts/modularity">模块化</u-sidebar-item>
@@ -21,19 +21,19 @@
                     <u-sidebar-item v-if="false" to="/documentation/concepts/3">编辑器工具</u-sidebar-item>
                     <u-sidebar-item to="/documentation/concepts/3">编码风格</u-sidebar-item>
                 </u-sidebar-group>
-                <u-sidebar-group title="Vusion App">
+                <u-sidebar-group text="Vusion App">
                     <u-sidebar-item to="/components/u-linear-layout">安装</u-sidebar-item>
                     <u-sidebar-item to="/components/u-base">基本操作</u-sidebar-item>
                     <u-sidebar-item to="/components/u-base">配置</u-sidebar-item>
                 </u-sidebar-group>
-                <u-sidebar-group title="Vusion CLI">
+                <u-sidebar-group text="Vusion CLI">
                     <u-sidebar-item to="/components/u-linear-layout">安装</u-sidebar-item>
                     <u-sidebar-item to="/components/u-linear-layout">命令</u-sidebar-item>
                     <u-sidebar-item to="/components/u-linear-layout">配置</u-sidebar-item>
                     <u-sidebar-item to="/components/u-linear-layout">结合Babel</u-sidebar-item>
                     <u-sidebar-item to="/components/u-linear-layout">结合TypeScript</u-sidebar-item>
                 </u-sidebar-group>
-                <u-sidebar-group title="Vukoa CLI">
+                <u-sidebar-group text="Vukoa CLI">
                     <u-sidebar-item to="/components/u-linear-layout">安装</u-sidebar-item>
                     <u-sidebar-item to="/components/u-linear-layout">命令</u-sidebar-item>
                     <u-sidebar-item to="/components/u-linear-layout">配置</u-sidebar-item>

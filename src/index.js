@@ -2,29 +2,26 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 Vue.use(VueRouter);
 
-import * as CloudUI from 'cloud-ui.vusion';
+import * as ProtoUI from 'proto-ui.vusion';
+import 'proto-ui.vusion/src/base/index.css';
+
 import GlobalLayout from './common/u-global-layout.vue';
 import Article from './common/u-article.vue';
-import NavbarItem from './common/u-navbar-item.vue';
-import ThemeSelect from './common/u-theme-select.vue';
-import ThemeSelectItem from './common/u-theme-select-item.vue';
 import Logo from './common/u-logo.vue';
 import Library from './common/u-library.vue';
 import './common/atom-one-light.css';
 import './common/base.css';
 
-const Components = Object.assign({}, CloudUI, {
+const Components = Object.assign({}, ProtoUI, {
     GlobalLayout,
     Article,
-    NavbarItem,
-    ThemeSelect,
-    ThemeSelectItem,
     Logo,
     Library,
 });
-delete Components.default;
 
-Object.keys(Components).forEach((key) => Components[key].name && Vue.component(Components[key].name, Components[key]));
+import { installComponents } from 'vusion-utils';
+
+installComponents(Components, Vue);
 
 import routes from './routes';
 new Vue({

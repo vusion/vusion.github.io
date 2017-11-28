@@ -36,7 +36,7 @@ export default {
     background: white;
     color: #34495e;
     box-shadow: 0 3px 4px rgba(0,0,0,0.1);
-    z-index: 1;
+    z-index: 10;
 }
 
 .body {
