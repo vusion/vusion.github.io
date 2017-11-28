@@ -74,14 +74,13 @@ vusion build --uglify-js
 
 在单文件Vue中，在`<style>`上直接添加`module`，同时在模板中动态绑定class：
 
-``` xhtml
+``` vue
 <template>
 <p :class="$style.red">
     This should be red.
 </p>
 </template>
-```
-<!-- style module>
+<style module>
 .red {
     color: red;
 }
@@ -89,7 +88,8 @@ vusion build --uglify-js
 .bold {
     font-weight: bold;
 }
-</style -->
+</style>
+```
 
 这些样式会转为
 
@@ -143,8 +143,7 @@ REA表示Root、Element、Attribute，其中借鉴了BEM（Block、Element、Mod
     </div>
 </div>
 </template>
-```
-<!-- style>
+<style>
 .root {
     width: 240px;
 }
@@ -167,7 +166,8 @@ REA表示Root、Element、Attribute，其中借鉴了BEM（Block、Element、Mod
 .root[active] .trail {
     animation: ...
 }
-</style -->
+</style>
+```
 
 #### 优先级问题[\<issue\>](https://github.com/vusion/vusion-cli/issues/21)
 
@@ -177,12 +177,12 @@ REA表示Root、Element、Attribute，其中借鉴了BEM（Block、Element、Mod
 <template>
 <u-button :class="$style.button">Button</u-button>
 </template>
-```
-<!-- style module>
+
+<style module>
 .button[class] {
     color: red;
 }
-</style -->
+</style>
 
 #### CSS提取成独立文件
 
@@ -262,7 +262,7 @@ svg-sprite拥有css-sprite不具备的调整大小特性。
 
 ``` css
 .root {
-    svg-sprite: url('./icons/refresh.svg');
+    background: url('./icons/refresh.svg?sprite');
     width: 200px;
     height: 120px;
 }
@@ -277,7 +277,6 @@ svg-sprite拥有css-sprite不具备的调整大小特性。
     height: 120px;
 }
 ```
-
 
 #### css-sprite
 
