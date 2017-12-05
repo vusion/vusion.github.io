@@ -67,9 +67,9 @@
                     <u-sidebar-item exact to="/proto-ui/u-emitter">触发器 <small>Emitter</small></u-sidebar-item>
                     <u-sidebar-item exact to="/proto-ui/u-router-item">路由项 <small>RouterItem</small></u-sidebar-item>
                     <u-sidebar-item exact to="/proto-ui/u-collapse-transition">折叠过渡 <small>CollapseTransition</small></u-sidebar-item>
-                    <!-- <u-sidebar-item exact to="/proto-ui/u-draggable">拖拽 <small>Draggable</small></u-sidebar-item>
+                    <u-sidebar-item exact to="/proto-ui/u-draggable">拖拽 <small>Draggable</small></u-sidebar-item>
                     <u-sidebar-item exact to="/proto-ui/u-droppable">拖放 <small>Droppable</small></u-sidebar-item>
-                    <u-sidebar-item exact to="/proto-ui/u-movable">拖移 <small>Movable</small></u-sidebar-item> -->
+                    <u-sidebar-item exact to="/proto-ui/u-dragger">拖拽器 <small>Dragger</small></u-sidebar-item>
                 </u-sidebar-group>
             </u-sidebar>
         </div>
