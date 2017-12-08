@@ -10,7 +10,8 @@ import conceptsRoutes from './views/concepts/routes';
 import Configuration from './views/configuration/index.vue';
 import configurationRoutes from './views/configuration/routes';
 
-import UIDesign from './views/ui-design.vue';
+import UIDesign from './views/ui-design/index.vue';
+import uiDesignRoutes from './views/ui-design/routes';
 
 import ProtoUI from './views/proto-ui/index.vue';
 import protoUIRoutes from './views/proto-ui/routes';
@@ -26,7 +27,7 @@ export default [
         { path: 'guides', component: Guides, children: guidesRoutes },
         { path: 'concepts', component: Concepts, children: conceptsRoutes },
         { path: 'configuration', component: Configuration, children: configurationRoutes },
-        { path: 'ui-design', component: UIDesign },
+        { path: 'ui-design', component: UIDesign, children: uiDesignRoutes },
         { path: 'proto-ui', component: ProtoUI, children: protoUIRoutes },
         { path: 'libraries', component: Libraries },
         { path: 'examples', component: Empty },
