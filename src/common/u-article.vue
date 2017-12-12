@@ -64,7 +64,7 @@ export default {
 
 .root > h5 {
     font-size: 12px;
-    margin: .3em 0;
+    margin: 22px 0 10px;
 }
 
 .root > ul {
