@@ -6,13 +6,13 @@
                     <u-sidebar-item to="/guides/introduction">介绍</u-sidebar-item>
                     <u-sidebar-item to="/guides/installation">安装</u-sidebar-item>
                     <u-sidebar-item to="/guides/quickstart">起步</u-sidebar-item>
-                    <u-sidebar-item to="/guides/af">页面</u-sidebar-item>
-                    <u-sidebar-item to="/guides/af">组件</u-sidebar-item>
-                    <u-sidebar-item to="/guides/af">组件库</u-sidebar-item>
-                    <u-sidebar-item to="/guides/af">资源</u-sidebar-item>
-                    <u-sidebar-item to="/guides/af">路由</u-sidebar-item>
-                    <u-sidebar-item to="/guides/af">模块</u-sidebar-item>
-                    <u-sidebar-item to="/guides/af">发布</u-sidebar-item>
+                    <u-sidebar-item to="/guides/af" disabled>页面</u-sidebar-item>
+                    <u-sidebar-item to="/guides/af" disabled>组件</u-sidebar-item>
+                    <u-sidebar-item to="/guides/af" disabled>组件库</u-sidebar-item>
+                    <u-sidebar-item to="/guides/af" disabled>资源</u-sidebar-item>
+                    <u-sidebar-item to="/guides/af" disabled>路由</u-sidebar-item>
+                    <u-sidebar-item to="/guides/af" disabled>模块</u-sidebar-item>
+                    <u-sidebar-item to="/guides/af" disabled>发布</u-sidebar-item>
                 </u-sidebar-group>
                 <!-- <u-sidebar-group title="高级">
                     <u-sidebar-item to="/guides/af">介绍</u-sidebar-item>

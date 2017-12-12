@@ -8,7 +8,7 @@
         <u-navbar-item to="/ui-design">组件设计</u-navbar-item>
         <u-navbar-item to="/proto-ui">原型组件</u-navbar-item>
         <u-navbar-item to="/libraries">组件库</u-navbar-item>
-        <u-navbar-item to="/cases">案例</u-navbar-item>
+        <u-navbar-item to="/cases" disabled>案例</u-navbar-item>
     </u-navbar>
     <div :class="$style.body" v-if="isLibraries" slot="body">
         <div :class="$style.wrap"><router-view></router-view></div>

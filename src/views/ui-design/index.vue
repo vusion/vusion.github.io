@@ -3,20 +3,22 @@
         <div :class="$style.side">
             <u-sidebar size="small">
                 <u-sidebar-group title="规范">
-                    <u-sidebar-item to="/components/u-base">事件设计</u-sidebar-item>
-                    <u-sidebar-item to="/components/u-base">API设计</u-sidebar-item>
+                    <u-sidebar-item to="/components/u-base" disabled>事件设计</u-sidebar-item>
+                    <u-sidebar-item to="/components/u-base" disabled>API设计</u-sidebar-item>
                 </u-sidebar-group>
                 <u-sidebar-group title="模式">
-                    <u-sidebar-item to="/components/u-base">父子模式</u-sidebar-item>
-                    <u-sidebar-item to="/components/u-base">父组子模式</u-sidebar-item>
-                    <u-sidebar-item to="/components/u-base">根节点模式</u-sidebar-item>
+                    <u-sidebar-item to="/components/u-base" disabled>父子模式</u-sidebar-item>
+                    <u-sidebar-item to="/components/u-base" disabled>父组子模式</u-sidebar-item>
+                    <u-sidebar-item to="/components/u-base" disabled>根节点模式</u-sidebar-item>
                 </u-sidebar-group>
                 <u-sidebar-group title="系列">
-                    <u-sidebar-item to="/components/u-base">列表系列</u-sidebar-item>
-                    <u-sidebar-item to="/components/u-link">路由系列</u-sidebar-item>
+                    <u-sidebar-item to="/components/u-base" disabled>列表系列</u-sidebar-item>
+                    <u-sidebar-item to="/components/u-link" disabled>路由系列</u-sidebar-item>
                     <u-sidebar-item to="/ui-design/form">表单系列</u-sidebar-item>
-                    <u-sidebar-item to="/components/u-badge">递归系列</u-sidebar-item>
-                    <u-sidebar-item to="/components/u-tag">弹出层系列</u-sidebar-item>
+                    <u-sidebar-item to="/components/u-badge" disabled>递归系列</u-sidebar-item>
+                    <u-sidebar-item to="/components/u-tag" disabled>弹出层系列</u-sidebar-item>
+                    <u-sidebar-item to="/components/u-tag" disabled>布局系列</u-sidebar-item>
+                    <u-sidebar-item to="/components/u-tag" disabled>图表系列</u-sidebar-item>
                     <!-- <u-sidebar-item to="/components/u-label">数值范围系列</u-sidebar-item> -->
                 </u-sidebar-group>
             </u-sidebar>
