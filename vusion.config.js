@@ -5,9 +5,12 @@ const iterator = require('markdown-it-for-inline');
 
 module.exports = {
     type: 'app',
+    version: '^0.5.4',
+    extractCSS: true,
+    uglifyJS: true,
     webpack: {
         entry: {
-            bundle: './src/index.js',
+            bundle: ['babel-polyfill', './src/index.js'],
         },
         output: {
             EXTENDS: true,
