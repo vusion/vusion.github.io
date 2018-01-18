@@ -11,6 +11,8 @@ import Logo from './common/u-logo.vue';
 import Library from './common/u-library.vue';
 import Navbar from './common/u-navbar.vue';
 import NavbarItem from './common/u-navbar-item.vue';
+import SidebarGroup from './common/u-sidebar-group.vue';
+import SidebarItem from './common/u-sidebar-item.vue';
 import './common/atom-one-light.css';
 import './common/base.css';
 
@@ -21,6 +23,8 @@ const Components = Object.assign({}, ProtoUI, {
     Library,
     Navbar,
     NavbarItem,
+    SidebarGroup,
+    SidebarItem,
 });
 
 import { installComponents } from 'vusion-utils';

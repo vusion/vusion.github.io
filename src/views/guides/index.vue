@@ -57,13 +57,12 @@ export default {
     top: 64px;
     bottom: 0;
     /* height: calc(100vh - 134px); */
-    background: #f0f6fa;
     color: #34495e;
     overflow: auto;
 }
 
 .main {
-    margin-left: 200px;
+    margin-left: 210px;
     padding: 40px;
 }
 </style>
