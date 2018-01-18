@@ -3,12 +3,15 @@
     <u-navbar slot="head">
         <u-logo slot="left" name="163yun"></u-logo>
         <u-navbar-item to="/guides">指南</u-navbar-item>
-        <u-navbar-item to="/concepts">概念</u-navbar-item>
-        <u-navbar-item to="/configuration">配置</u-navbar-item>
+        <!-- <u-navbar-item to="/concepts">概念</u-navbar-item> -->
+        <u-navbar-item to="/api">API</u-navbar-item>
         <u-navbar-item to="/ui-design">组件设计</u-navbar-item>
         <u-navbar-item to="/proto-ui">组件文档</u-navbar-item>
         <u-navbar-item to="/libraries">组件库</u-navbar-item>
         <u-navbar-item to="/cases" disabled>案例</u-navbar-item>
+        <span :class="$style.right">
+            <u-navbar-item href="https://github.com/vusion" target="_blank">GitHub</u-navbar-item>
+        </span>
     </u-navbar>
     <div :class="$style.body" v-if="isLibraries" slot="body">
         <div :class="$style.wrap"><router-view></router-view></div>
@@ -42,6 +45,10 @@ export default {
 </script>
 
 <style module>
+.right {
+    float: right;
+}
+
 .body {
     min-height: 100vh;
     background: #f7fafc;

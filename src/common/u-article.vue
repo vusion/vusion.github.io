@@ -29,7 +29,6 @@ export default {
     font-size: 20px;
     padding: 0 60px;
     margin: 80px -60px 10px;
-    color: #666;
 }
 
 .root > h3 {
@@ -110,7 +109,8 @@ export default {
     padding: 0 3px;
     font-size: 12px;
     background: #fafafa;
-    color: #d05;
+    color: $brand-secondary;
+    font-family: Monaco, Menlo, Consolas, monospace;
 }
 
 .root pre {

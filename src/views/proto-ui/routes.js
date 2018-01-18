@@ -18,6 +18,7 @@ export default [
     { path: 'u-pagination', component: () => import('proto-ui.vusion/src/u-pagination.vue/README.md') },
     /* Form */
     { path: 'u-input', component: () => import('proto-ui.vusion/src/u-input.vue/README.md') },
+    { path: 'u-number-input', component: () => import('proto-ui.vusion/src/u-number-input.vue/README.md') },
     { path: 'u-textarea', component: () => import('proto-ui.vusion/src/u-textarea.vue/README.md') },
     { path: 'u-radios', component: () => import('proto-ui.vusion/src/u-radios.vue/README.md') },
     { path: 'u-radio--0', component: () => import('proto-ui.vusion/src/u-radio--0.vue/README.md') },
@@ -25,6 +26,8 @@ export default [
     { path: 'u-checkbox--0', component: () => import('proto-ui.vusion/src/u-checkbox--0.vue/README.md') },
     { path: 'u-switch', component: () => import('proto-ui.vusion/src/u-switch.vue/README.md') },
     { path: 'u-select', component: () => import('proto-ui.vusion/src/u-select.vue/README.md') },
+    { path: 'u-slider', component: () => import('proto-ui.vusion/src/u-slider.vue/README.md') },
+    { path: 'u-combo-slider', component: () => import('proto-ui.vusion/src/u-combo-slider.vue/README.md') },
     { path: 'u-field', component: () => import('proto-ui.vusion/src/u-field.vue/README.md') },
     { path: 'u-form', component: () => import('proto-ui.vusion/src/u-form.vue/README.md') },
     /* Data */

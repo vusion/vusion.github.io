@@ -43,7 +43,7 @@ hue-6-2: #c18401
 .hljs-selector-tag,
 .hljs-deletion,
 .hljs-subst {
-  color: #e45649;
+  color: #$brand-secondary;
 }
 
 .hljs-literal {
@@ -55,7 +55,7 @@ hue-6-2: #c18401
 .hljs-addition,
 .hljs-attribute,
 .hljs-meta-string {
-  color: #50a14f;
+  color: $brand-primary;
 }
 
 .hljs-built_in,

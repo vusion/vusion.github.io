@@ -32,16 +32,16 @@ export default {
     top: 0;
     right: 0;
     left: 0;
-    height: 64px;
-    background: white;
-    color: #34495e;
+    height: 68px;
+    background: #1ba67e;
+    color: white;
     box-shadow: 0 3px 4px rgba(0,0,0,0.1);
     z-index: 10;
 }
 
 .body {
     /* min-height: calc(100vh - 134px); */
-    margin-top: 64px;
+    margin-top: 68px;
 }
 
 .foot {

@@ -3,12 +3,14 @@ import VueRouter from 'vue-router';
 Vue.use(VueRouter);
 
 import * as ProtoUI from 'proto-ui.vusion';
-import 'proto-ui.vusion/src/base/index.css';
+import 'proto-ui.vusion/src/base/base.css';
 
 import GlobalLayout from './common/u-global-layout.vue';
 import Article from './common/u-article.vue';
 import Logo from './common/u-logo.vue';
 import Library from './common/u-library.vue';
+import Navbar from './common/u-navbar.vue';
+import NavbarItem from './common/u-navbar-item.vue';
 import './common/atom-one-light.css';
 import './common/base.css';
 
@@ -17,6 +19,8 @@ const Components = Object.assign({}, ProtoUI, {
     Article,
     Logo,
     Library,
+    Navbar,
+    NavbarItem,
 });
 
 import { installComponents } from 'vusion-utils';

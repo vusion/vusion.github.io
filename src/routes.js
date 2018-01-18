@@ -7,8 +7,8 @@ import Guides from './views/guides/index.vue';
 import guidesRoutes from './views/guides/routes';
 import Concepts from './views/concepts/index.vue';
 import conceptsRoutes from './views/concepts/routes';
-import Configuration from './views/configuration/index.vue';
-import configurationRoutes from './views/configuration/routes';
+import API from './views/api/index.vue';
+import apiRoutes from './views/api/routes';
 
 import UIDesign from './views/ui-design/index.vue';
 import uiDesignRoutes from './views/ui-design/routes';
@@ -26,7 +26,7 @@ export default [
         // { path: 'features', component: Features },
         { path: 'guides', component: Guides, children: guidesRoutes },
         { path: 'concepts', component: Concepts, children: conceptsRoutes },
-        { path: 'configuration', component: Configuration, children: configurationRoutes },
+        { path: 'api', component: API, children: apiRoutes },
         { path: 'ui-design', component: UIDesign, children: uiDesignRoutes },
         { path: 'proto-ui', component: ProtoUI, children: protoUIRoutes },
         { path: 'libraries', component: Libraries },
