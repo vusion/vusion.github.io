@@ -13,4 +13,8 @@ export default [
     { path: 'deployment', component: () => import('./deployment.md') },
     { path: 'commands', component: () => import('./commands.md') },
     { path: 'config', component: () => import('./config.md') },
+
+    { path: 'editor', component: () => import('./editor.md') },
+    { path: 'js-style', component: () => import('eslint-config-vusion/JavaScript.zh-CN.md') },
+    { path: 'vue-style', component: () => import('./vue-style.md') },
 ];

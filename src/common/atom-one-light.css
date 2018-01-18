@@ -43,7 +43,7 @@ hue-6-2: #c18401
 .hljs-selector-tag,
 .hljs-deletion,
 .hljs-subst {
-  color: #$brand-secondary;
+  color: $brand-secondary;
 }
 
 .hljs-literal {
