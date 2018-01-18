@@ -1,0 +1,8 @@
+@import 'proto-ui.vusion/src/u-sidebar-group.vue/module.css';
+
+.head {
+    font-size: 18px;
+    color: rgb(65, 65, 65);
+    line-height: 38px;
+    margin-top: 12px;
+}
