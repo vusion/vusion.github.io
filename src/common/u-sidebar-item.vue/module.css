@@ -1,10 +1,18 @@
 @import 'proto-ui.vusion/src/u-sidebar-item.vue/module.css';
 
+.root {
+    color: inherit;       
+}
+
 .root[selected] {
-    color: $brand-secondary;
+    color: $brand-primary;
     background-color: #fff;
 }
 
 .root:hover {
-    color: #ea5a33b8;
+    color: $brand-primary;
+}
+
+.root[disabled] {
+    color: #34495e75;
 }

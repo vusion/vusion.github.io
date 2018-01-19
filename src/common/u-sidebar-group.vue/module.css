@@ -2,7 +2,7 @@
 
 .head {
     font-size: 18px;
-    color: rgb(65, 65, 65);
+    color: inherit;
     line-height: 38px;
     margin-top: 12px;
 }
