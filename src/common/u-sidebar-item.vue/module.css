@@ -1,7 +1,8 @@
 @import 'proto-ui.vusion/src/u-sidebar-item.vue/module.css';
 
 .root {
-    color: inherit;       
+    color: inherit;
+    padding-left: 26px;
 }
 
 .root[selected] {
