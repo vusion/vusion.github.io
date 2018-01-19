@@ -1,8 +1,31 @@
 .root {
     display: inline-block;
-    margin-right: 10px;
+    position: relative;
+    user-select: none;
+    cursor: $cursor-pointer;
+    text-align: center;
+    font-size: 16px;
+    height: 60px;
+    line-height: 60px;
     padding-right: 40px; /* 增加mouseover区域 */
-    margin-right: -30px;
+    margin-left: 30px;
+}
+
+.root + .root {
+    margin-left: 30px;
+}
+
+.root[readonly] {
+    cursor: default;
+}
+
+.root[selected] {
+    color: $brand-primary;
+}
+
+.root[disabled] {
+    cursor: $cursor-not-allowed;
+    color: $brand-disabled;
 }
 
 .content {
@@ -26,7 +49,6 @@
     line-height: 2;
     width: 120px;
     top: 50px;
-    left: 40px;
     font-size: 14px;
     text-align: left;
     box-shadow: 0 2px 8px rgba(128,142,150,0.2);
