@@ -1,0 +1,6 @@
+.root {
+    padding-left: 20px;
+}
+.root:hover {
+    color: $brand-primary;
+}
