@@ -1,12 +1,15 @@
 <template>
-<a :class="$style.root" target="_blank">
-    <div :class="$style.head">
-        <div v-if="logo" :class="$style.logo" :name="logo"></div>
-        <div :class="$style.title">{{ title }}</div>
-    </div>
-    <div :class="$style.colors">
-        <span v-for="color in colors" :key="color" :class="$style.color" :style="{ background: color }"></span>
-    </div>
+<a :class="$style.root" :more="more">
+    <template v-if="!more">
+        <div :class="$style.head">
+            <div v-if="logo" :class="$style.logo" :name="logo"></div>
+            <div :class="$style.title">{{ title }}</div>
+        </div>
+        <div :class="$style.colors">
+            <span v-for="color in colors" :key="color" :class="$style.color" :style="{ background: color }"></span>
+        </div>
+    </template>
+    <div v-else :class="$style.more" title="我们想提供一套自己的组件库"></div>
 </a>
 </template>
 
@@ -17,6 +20,7 @@ export default {
         title: String,
         logo: String,
         colors: Array,
+        more: { type: Boolean, default: false },
     },
 };
 </script>
@@ -81,5 +85,16 @@ export default {
     width: 1em;
     height: 1em;
     margin-right: 2px;
+}
+
+.more {
+    font-size: 72px;
+    text-align: center;
+    line-height: 200px;
+    color: #657f98;
+}
+
+.more:before {
+    icon-font: url('../assets/ic_add_black_24px.svg');
 }
 </style>
