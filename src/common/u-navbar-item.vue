@@ -10,8 +10,13 @@ export default NavbarItem;
 .root {
     height: 68px;
     line-height: 68px;
+    padding: 0 6px;
     color: inherit;
     transition: all $transition-duration;
+}
+
+.root + .root {
+    margin-left: 30px;
 }
 
 .root:after {
