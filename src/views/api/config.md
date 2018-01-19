@@ -12,7 +12,7 @@
     staticPath: '',                        // 静态资源目录
     assetsPath: '',                        // @弃用, 同 `staticPath`
     libraryPath: '',                       // 库入口文件。项目类型为 `library` 时，默认为 `./index.js`。
-    baseCSSPath: './src/base/index.css',   // Path of base CSS
+    baseCSSPath: './src/base/index.css',   // CSS 基础排版
     globalCSSPath: './global.css',         // 全局 CSS 文件路径
     clean: true,                           // `dev` 或 `build` 操作前，清空输出目录。
     docs: false,                           // 为库中的基础组件生成文档。`project-type` 为 `library` 时，默认开启该功能。

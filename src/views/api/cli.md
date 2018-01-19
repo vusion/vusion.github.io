@@ -23,7 +23,7 @@
 设置入口文件路径
 
 #### -C, --no-clean
-Disable to clean and copy
+不清除打包目录
 
 #### -l, --library-path &lt;path>
 设置库入口文件。`project-type` 为 `library` 时，默认入口文件为 `./index.js`。
@@ -41,7 +41,7 @@ Disable to clean and copy
 关闭热更新
 
 #### --resolve-priority
-Priority to resolve modules or loaders, "cwd"(default) or "cli"
+解析 modules 和 loaders 使用包的优先级。"cwd"：当前目录，"cli"：cli目录。默认使用当前目录。
 
 
 ### vusion build
