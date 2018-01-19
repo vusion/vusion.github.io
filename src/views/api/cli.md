@@ -67,10 +67,10 @@ Disable to clean and copy
 生成 source map
 
 #### --extract-css
-使用 ExtractTextPlugin 处理 css 文件
+使用 ExtractTextPlugin 处理 CSS 文件
 
 #### --uglify-js
-使用UglifyJSPlugin处理JS文件
+使用 UglifyJSPlugin 处理JS文件
 
 #### --minify-js
 设置为 `true` 或者 `'babel-minify'` 时，使用 BabelMinifyPlugin 压缩 JS 文件。
@@ -80,7 +80,7 @@ Disable to clean and copy
 启用试用中的 loader 和 plugin。
 
 #### --resolve-priority
-Priority to resolve modules or loaders, "cwd"(default) or "cli"
+解析 modules 和 loaders 使用包的优先级。"cwd"：当前目录，"cli"：cli目录。默认使用当前目录。
 
 ### vusion test
 
@@ -96,7 +96,7 @@ Priority to resolve modules or loaders, "cwd"(default) or "cli"
 监听 Karma
 
 #### --resolve-priority
-Priority to resolve modules or loaders, "cwd"(default) or "cli"
+解析 modules 和 loaders 使用包的优先级。"cwd"：当前目录，"cli"：cli目录。默认使用当前目录。
 
 ### vusion publish &lt;version>
 
