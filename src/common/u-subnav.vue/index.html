@@ -1,0 +1,6 @@
+<div :class="$style.root" @mouseover="onMouseover" @mouseout="onMouseout">
+    <span :class="$style.content">{{title}}</span>
+    <div :class="$style.items" v-show="show">
+        <slot></slot>
+    </div>
+</div>
