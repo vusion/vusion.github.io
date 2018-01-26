@@ -4,7 +4,7 @@
 
 该命令用于查看 Vusion 的当前版本。
 
-### vusion init <project-type> <project-name>
+### vusion init \<project-type\> \<project-name\>
 
 该命令用于创建一个新的项目。`project-type`可以选择这几种类型：`app`、`app-pro`、`library`、`fullstack`。`project-name`为新项目的名称。
 

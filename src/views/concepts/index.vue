@@ -27,7 +27,7 @@
     padding: 20px 0;
     position: fixed;
     width: 200px;
-    top: 64px;
+    top: 90px;
     bottom: 0;
     /* height: calc(100vh - 134px); */
     color: #34495e;
