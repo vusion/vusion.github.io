@@ -23,12 +23,13 @@ export default {
 .root > h1 {
     font-size: 24px;
     line-height: 30px;
+    margin-bottom: 50px;
 }
 
 .root > h2 {
     font-size: 20px;
     padding: 0 60px;
-    margin: 80px -60px 10px;
+    margin: 50px -60px 10px;
 }
 
 .root > h3 {

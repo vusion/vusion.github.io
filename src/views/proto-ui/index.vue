@@ -20,11 +20,13 @@
                 <u-sidebar-item exact to="/proto-ui/u-navbar">导航栏 <small>Navbar</small></u-sidebar-item>
                 <u-sidebar-item exact to="/proto-ui/u-sidebar">侧边栏 <small>Sidebar</small></u-sidebar-item>
                 <u-sidebar-item exact to="/proto-ui/u-tabs">标签页 <small>Tabs</small></u-sidebar-item>
+                <u-sidebar-item exact to="/proto-ui/u-steps">步骤条 <small>Steps</small></u-sidebar-item>
                 <u-sidebar-item exact to="/proto-ui/u-pagination">翻页器 <small>Pagination</small></u-sidebar-item>
+                <u-sidebar-item exact to="/proto-ui/u-collapse">折叠面板 <small>Collapse</small></u-sidebar-item>
             </u-sidebar-group>
             <u-sidebar-group title="Form">
                 <u-sidebar-item exact to="/proto-ui/u-input">单行输入 <small>Input</small></u-sidebar-item>
-                <u-sidebar-item exact to="/proto-ui/u-number-input">数字输入 <small>NumberInput</small></u-sidebar-item>
+                <!-- <u-sidebar-item exact to="/proto-ui/u-number-input">数字输入 <small>NumberInput</small></u-sidebar-item> -->
                 <u-sidebar-item exact to="/proto-ui/u-textarea">多行输入 <small>Textarea</small></u-sidebar-item>
                 <!-- <u-sidebar-item exact to="/proto-ui/u-multi-select">多项选择框 <small>MultiSelect</small></u-sidebar-item> -->
                 <u-sidebar-item exact to="/proto-ui/u-radios">单选组 <small>Radios</small></u-sidebar-item>
@@ -32,7 +34,7 @@
                 <u-sidebar-item exact to="/proto-ui/u-switch">开关 <small>Switch</small></u-sidebar-item>
                 <u-sidebar-item exact to="/proto-ui/u-select">选择框 <small>Select</small></u-sidebar-item>
                 <u-sidebar-item exact to="/proto-ui/u-slider">滑块 <small>Slider</small></u-sidebar-item>
-                <u-sidebar-item exact to="/proto-ui/u-combo-slider">复合滑块 <small>ComboSlider</small></u-sidebar-item>
+                <!-- <u-sidebar-item exact to="/proto-ui/u-combo-slider">复合滑块 <small>ComboSlider</small></u-sidebar-item> -->
                 <u-sidebar-item v-if="advanced" to="/proto-ui/u-field">表单控件 <small>Field</small></u-sidebar-item>
                 <!-- <u-sidebar-item v-if="advanced" to="/proto-ui/u-form-item">表单项 <small>FormItem</small></u-sidebar-item> -->
                 <u-sidebar-item exact to="/proto-ui/u-form">表单 <small>Form</small></u-sidebar-item>
