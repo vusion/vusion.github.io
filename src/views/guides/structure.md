@@ -1,6 +1,6 @@
 # 目录结构
 
-本节详细展示了不同类型 Vusion 项目的目录结构，以及各种目录和文件的作用。
+本节详细展示了不同类型 Vusion 项目的目录结构，以及各种目录和文件的作用。如果觉得不直观，可以查看 [Vusion 项目模板](https://github.com/vusion/vusion-templates)。
 
 ### 普通单页应用（App）
 

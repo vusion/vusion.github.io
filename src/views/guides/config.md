@@ -47,7 +47,7 @@ module.exports = {
 };
 ```
 
-为了防止出错与方便使用，配置中的`webpack`、`webpackDevServer`、`postcss`、`vue`、`karma`等对象与 Vusion 的默认配置采用深度合并的策略。
+为了方便使用且防止出错，配置中的`webpack`、`webpackDevServer`、`postcss`、`vue`、`karma`等对象与 Vusion 的默认配置采用深度合并的策略。
 
 ### DevServer 配置
 

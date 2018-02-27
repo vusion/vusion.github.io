@@ -1,5 +1,11 @@
 # 测试
 
+注意：测试功能需要全局安装`mocha`和`chai`，否则可能无法运行：
+
+``` bash
+npm install -g mocha chai
+```
+
 ### 单元测试
 
 Vusion 中的单元测试可以写在多个地方。

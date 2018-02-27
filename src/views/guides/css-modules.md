@@ -9,7 +9,7 @@
 ``` vue
 <template>
 <p :class="$style.red">
-    This should be red.
+    This sentence <span :class="$style['strong-word']">should be</span> red.
 </p>
 </template>
 <style module>
@@ -17,7 +17,7 @@
     color: red;
 }
 
-.bold {
+.strong-word {
     font-weight: bold;
 }
 </style>
@@ -36,6 +36,8 @@
 ```
 
 具体可以参见 [vue-loader 的 CSS Modules](https://vue-loader.vuejs.org/zh-cn/features/css-modules.html)。
+
+> 注意：如果 class 名中有连字符时，请不要忘记在`$style`上使用方括号，例如：`$style['strong-word']`。
 
 多文件 Vue 中，在`.vue`文件夹添加`module.css`文件，书写方式与单文件 Vue 相同。
 
