@@ -14,6 +14,7 @@ export default [
     /* Navigation */
     { path: 'u-navbar', component: () => import('proto-ui.vusion/src/u-navbar.vue/README.md') },
     { path: 'u-sidebar', component: () => import('proto-ui.vusion/src/u-sidebar.vue/README.md') },
+    { path: 'u-menu', component: () => import('proto-ui.vusion/src/u-menu.vue/README.md') },
     { path: 'u-tabs', component: () => import('proto-ui.vusion/src/u-tabs.vue/README.md') },
     { path: 'u-steps', component: () => import('proto-ui.vusion/src/u-steps.vue/README.md') },
     { path: 'u-pagination', component: () => import('proto-ui.vusion/src/u-pagination.vue/README.md') },
@@ -37,6 +38,8 @@ export default [
     { path: 'u-tree-view', component: () => import('proto-ui.vusion/src/u-tree-view.vue/README.md') },
     /* Popper */
     { path: 'u-popper', component: () => import('proto-ui.vusion/src/u-popper.vue/README.md') },
+    { path: 'u-tooltip', component: () => import('proto-ui.vusion/src/u-tooltip.vue/README.md') },
+    { path: 'u-popup', component: () => import('proto-ui.vusion/src/u-popup.vue/README.md') },
     /* Progress & Chart */
     { path: 'u-linear-progress', component: () => import('proto-ui.vusion/src/u-linear-progress.vue/README.md') },
     { path: 'u-circular-progress', component: () => import('proto-ui.vusion/src/u-circular-progress.vue/README.md') },

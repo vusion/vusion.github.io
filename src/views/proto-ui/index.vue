@@ -19,6 +19,7 @@
             <u-sidebar-group title="Navigation">
                 <u-sidebar-item exact to="/proto-ui/u-navbar">导航栏 <small>Navbar</small></u-sidebar-item>
                 <u-sidebar-item exact to="/proto-ui/u-sidebar">侧边栏 <small>Sidebar</small></u-sidebar-item>
+                <u-sidebar-item exact to="/proto-ui/u-menu">菜单 <small>Menu</small></u-sidebar-item>
                 <u-sidebar-item exact to="/proto-ui/u-tabs">标签页 <small>Tabs</small></u-sidebar-item>
                 <u-sidebar-item exact to="/proto-ui/u-steps">步骤条 <small>Steps</small></u-sidebar-item>
                 <u-sidebar-item exact to="/proto-ui/u-pagination">翻页器 <small>Pagination</small></u-sidebar-item>
@@ -53,8 +54,8 @@
             </u-sidebar-group> -->
             <u-sidebar-group title="Popper">
                 <u-sidebar-item exact to="/proto-ui/u-popper">弹出层 <small>Popper</small></u-sidebar-item>
-            <!-- <u-sidebar-item exact to="/proto-ui/u-tooltip">工具提示 <small>Tooltip</small></u-sidebar-item>
-                <u-sidebar-item exact to="/proto-ui/u-popover">弹出框 <small>Popover</small></u-sidebar-item> -->
+                <u-sidebar-item exact to="/proto-ui/u-tooltip">工具提示 <small>Tooltip</small></u-sidebar-item>
+                <u-sidebar-item exact to="/proto-ui/u-popup">弹出框 <small>Popup</small></u-sidebar-item>
             </u-sidebar-group>
             <!-- <u-sidebar-group title="Feedback">
                 <u-sidebar-item exact to="/proto-ui/u-loading">加载中 <small>Loading</small></u-sidebar-item>

@@ -18,7 +18,7 @@ import SubnavItem from './common/u-subnav-item.vue';
 import './common/atom-one-light.css';
 import './common/base.css';
 
-const Components = Object.assign({}, ProtoUI, {
+const UILibrary = Object.assign({}, ProtoUI, {
     GlobalLayout,
     Article,
     Logo,
@@ -31,9 +31,9 @@ const Components = Object.assign({}, ProtoUI, {
     SubnavItem,
 });
 
-import { installComponents } from 'vusion-utils';
+import { install } from 'vusion-utils';
 
-installComponents(Components, Vue);
+install(UILibrary, Vue);
 
 import routes from './routes';
 new Vue({
