@@ -17,4 +17,5 @@ export default [
     { path: 'editor', component: () => import('./editor.md') },
     { path: 'js-style', component: () => import('eslint-config-vusion/JavaScript.zh-CN.md') },
     { path: 'vue-style', component: () => import('./vue-style.md') },
+    { path: 'ui-style', component: () => import('./ui-style.md') },
 ];
