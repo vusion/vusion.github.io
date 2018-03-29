@@ -29,6 +29,8 @@ export default [
     { path: 'u-checkbox--0', component: () => import('proto-ui.vusion/src/u-checkbox--0.vue/README.md') },
     { path: 'u-switch', component: () => import('proto-ui.vusion/src/u-switch.vue/README.md') },
     { path: 'u-select', component: () => import('proto-ui.vusion/src/u-select.vue/README.md') },
+    { path: 'u-cascade-select', component: () => import('proto-ui.vusion/src/u-cascade-select.vue/README.md') },
+    { path: 'u-region-select', component: () => import('proto-ui.vusion/src/u-region-select.vue/README.md') },
     { path: 'u-slider', component: () => import('proto-ui.vusion/src/u-slider.vue/README.md') },
     // { path: 'u-combo-slider', component: () => import('proto-ui.vusion/src/u-combo-slider.vue/README.md') },
     { path: 'u-field', component: () => import('proto-ui.vusion/src/u-field.vue/README.md') },

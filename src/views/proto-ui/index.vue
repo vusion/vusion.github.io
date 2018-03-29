@@ -34,9 +34,11 @@
                 <u-sidebar-item exact to="/proto-ui/u-checkboxes">多选组 <small>Checkboxes</small></u-sidebar-item>
                 <u-sidebar-item exact to="/proto-ui/u-switch">开关 <small>Switch</small></u-sidebar-item>
                 <u-sidebar-item exact to="/proto-ui/u-select">选择框 <small>Select</small></u-sidebar-item>
+                <u-sidebar-item exact to="/proto-ui/u-cascade-select">级联选择 <small>CascadeSelect</small></u-sidebar-item>
+                <u-sidebar-item exact to="/proto-ui/u-region-select">地区选择 <small>RegionSelect</small></u-sidebar-item>
                 <u-sidebar-item exact to="/proto-ui/u-slider">滑块 <small>Slider</small></u-sidebar-item>
                 <!-- <u-sidebar-item exact to="/proto-ui/u-combo-slider">复合滑块 <small>ComboSlider</small></u-sidebar-item> -->
-                <u-sidebar-item v-if="advanced" to="/proto-ui/u-field">表单控件 <small>Field</small></u-sidebar-item>
+                <u-sidebar-item disabled v-if="advanced" to="/proto-ui/u-field">表单控件 <small>Field</small></u-sidebar-item>
                 <!-- <u-sidebar-item v-if="advanced" to="/proto-ui/u-form-item">表单项 <small>FormItem</small></u-sidebar-item> -->
                 <u-sidebar-item exact to="/proto-ui/u-form">表单 <small>Form</small></u-sidebar-item>
             </u-sidebar-group>
@@ -54,8 +56,8 @@
             </u-sidebar-group> -->
             <u-sidebar-group title="Popper">
                 <u-sidebar-item exact to="/proto-ui/u-popper">弹出层 <small>Popper</small></u-sidebar-item>
-                <u-sidebar-item exact to="/proto-ui/u-tooltip">工具提示 <small>Tooltip</small></u-sidebar-item>
                 <u-sidebar-item exact to="/proto-ui/u-popup">弹出框 <small>Popup</small></u-sidebar-item>
+                <u-sidebar-item exact to="/proto-ui/u-tooltip">工具提示 <small>Tooltip</small></u-sidebar-item>
             </u-sidebar-group>
             <!-- <u-sidebar-group title="Feedback">
                 <u-sidebar-item exact to="/proto-ui/u-loading">加载中 <small>Loading</small></u-sidebar-item>

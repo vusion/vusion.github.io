@@ -7,7 +7,7 @@
         <u-navbar-item to="/api">API</u-navbar-item>
         <u-subnav title="组件">
             <u-subnav-item to="/proto-ui">原型组件</u-subnav-item>
-            <u-subnav-item to="/ui-design">组件设计</u-subnav-item>
+            <u-subnav-item to="/ui-design">设计思路</u-subnav-item>
         </u-subnav>
         <u-navbar-item to="/libraries">组件库</u-navbar-item>
         <u-navbar-item to="/cases" disabled>案例</u-navbar-item>
