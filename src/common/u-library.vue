@@ -11,7 +11,6 @@
             <div :class="$style.footer">
                 <div :class="$style.brief">{{ brief }}</div>
                 <div v-if="colors" :class="$style.colors">
-                    颜色：
                     <span v-for="color in colors" :key="color" :class="$style.color" :style="{ background: color }"></span>
                 </div>
             </div>
@@ -50,6 +49,14 @@ export default {
     background: white;
     box-shadow: 0 0 2px 0 rgba(80,90,109,0.16);
     cursor: default;
+}
+
+.root[disabled] {
+    cursor: not-allowed;
+}
+
+.root[disabled] .head {
+    opacity: 0.4;
 }
 
 .root[href] {
