@@ -21,7 +21,7 @@ export default [
     { path: 'u-collapse', component: () => import('proto-ui.vusion/src/u-collapse.vue/README.md') },
     /* Form */
     { path: 'u-input', component: () => import('proto-ui.vusion/src/u-input.vue/README.md') },
-    // { path: 'u-number-input', component: () => import('proto-ui.vusion/src/u-number-input.vue/README.md') },
+    { path: 'u-number-input', component: () => import('proto-ui.vusion/src/u-number-input.vue/README.md') },
     { path: 'u-textarea', component: () => import('proto-ui.vusion/src/u-textarea.vue/README.md') },
     { path: 'u-radios', component: () => import('proto-ui.vusion/src/u-radios.vue/README.md') },
     { path: 'u-radio--0', component: () => import('proto-ui.vusion/src/u-radio--0.vue/README.md') },
@@ -32,7 +32,7 @@ export default [
     { path: 'u-cascade-select', component: () => import('proto-ui.vusion/src/u-cascade-select.vue/README.md') },
     { path: 'u-region-select', component: () => import('proto-ui.vusion/src/u-region-select.vue/README.md') },
     { path: 'u-slider', component: () => import('proto-ui.vusion/src/u-slider.vue/README.md') },
-    // { path: 'u-combo-slider', component: () => import('proto-ui.vusion/src/u-combo-slider.vue/README.md') },
+    { path: 'u-combo-slider', component: () => import('proto-ui.vusion/src/u-combo-slider.vue/README.md') },
     { path: 'u-field', component: () => import('proto-ui.vusion/src/u-field.vue/README.md') },
     { path: 'u-form', component: () => import('proto-ui.vusion/src/u-form.vue/README.md') },
     /* Data */

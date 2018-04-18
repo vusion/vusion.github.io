@@ -25,10 +25,10 @@
     "solution"
   ],
   "dependencies": {
-    "proto-ui.vusion": "~0.2.1",
+    "proto-ui.vusion": "~0.3.0",
     "vue": "^2.5.0",
     "vue-router": "^3.0.0",
-    "vusion-utils": "^0.2.0"
+    "vusion-utils": "^0.2.1"
   },
   "devDependencies": {
     "babel-polyfill": "^6.26.0",

@@ -52,6 +52,15 @@ this.$emit('select', {
 
 ## 事件
 
+#### 表单控件通常抛出的事件
+
+- `input`，用于`v-model`的双向绑定
+- `update:value`，用于`.sync`的双向绑定
+- `change`，监听`value`改变时触发
+- `focus`和`blur`，尽量实现
+- 尽量抛出一个单纯由用户触发的事件，比如`select`、`toggle`、`slide`等
+- 针对用户触发的事件尽量抛出一个可以阻止的`before-`事件，比如`before-select`、`before-toggle`等
+
 #### input 事件只抛出改变的值
 
 为了适应`v-model`。
@@ -136,7 +145,29 @@ this.$emit('change', {
 
 ## 样式
 
-`.root`不一定是模板的根节点，一定是组件中角色的根节点，最好的可以透传样式或属性的节点。
+#### 根节点
+
+`.root`不一定是模板的根节点，一定是组件中角色的根节点，最好是可以透传样式或属性的节点。
+
+对于封装好的组件，建议只允许修改根节点的样式，而不能修改组件内容其他节点的样式。
+
+```
+<template>
+<u-select :class="$style.select"></u-select>
+</template>
+
+<style>
+/* ✓ good */
+.select {
+    width: 160px;
+}
+
+/* ✗ bad */
+.select > li {
+    width: 120px;
+}
+</style>
+```
 
 #### 变量命名
 

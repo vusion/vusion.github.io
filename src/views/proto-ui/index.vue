@@ -27,7 +27,7 @@
             </u-sidebar-group>
             <u-sidebar-group title="Form">
                 <u-sidebar-item exact to="/proto-ui/u-input">单行输入 <small>Input</small></u-sidebar-item>
-                <!-- <u-sidebar-item exact to="/proto-ui/u-number-input">数字输入 <small>NumberInput</small></u-sidebar-item> -->
+                <u-sidebar-item exact to="/proto-ui/u-number-input">数字输入 <small>NumberInput</small></u-sidebar-item>
                 <u-sidebar-item exact to="/proto-ui/u-textarea">多行输入 <small>Textarea</small></u-sidebar-item>
                 <!-- <u-sidebar-item exact to="/proto-ui/u-multi-select">多项选择框 <small>MultiSelect</small></u-sidebar-item> -->
                 <u-sidebar-item exact to="/proto-ui/u-radios">单选组 <small>Radios</small></u-sidebar-item>
@@ -37,7 +37,7 @@
                 <u-sidebar-item exact to="/proto-ui/u-cascade-select">级联选择 <small>CascadeSelect</small></u-sidebar-item>
                 <u-sidebar-item exact to="/proto-ui/u-region-select">地区选择 <small>RegionSelect</small></u-sidebar-item>
                 <u-sidebar-item exact to="/proto-ui/u-slider">滑块 <small>Slider</small></u-sidebar-item>
-                <!-- <u-sidebar-item exact to="/proto-ui/u-combo-slider">复合滑块 <small>ComboSlider</small></u-sidebar-item> -->
+                <u-sidebar-item exact to="/proto-ui/u-combo-slider">复合滑块 <small>ComboSlider</small></u-sidebar-item>
                 <u-sidebar-item disabled v-if="advanced" to="/proto-ui/u-field">表单控件 <small>Field</small></u-sidebar-item>
                 <!-- <u-sidebar-item v-if="advanced" to="/proto-ui/u-form-item">表单项 <small>FormItem</small></u-sidebar-item> -->
                 <u-sidebar-item exact to="/proto-ui/u-form">表单 <small>Form</small></u-sidebar-item>
