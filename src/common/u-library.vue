@@ -85,10 +85,10 @@ export default {
 .logo[name="163yun"] {
     display: inline-block;
     width: 50px;
-    height: 34px;
+    height: 50px;
     margin-top: -5px;
     vertical-align: middle;
-    background: url(../assets/logo-cloud.png) no-repeat;
+    background: url(../assets/logo-163yun.svg) no-repeat;
     background-size: 100% 100%;
 }
 
