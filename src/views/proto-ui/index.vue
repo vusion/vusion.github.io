@@ -61,12 +61,12 @@
                 <u-sidebar-item exact to="/proto-ui/u-popup">弹出框 <small>Popup</small></u-sidebar-item>
                 <u-sidebar-item exact to="/proto-ui/u-tooltip">工具提示 <small>Tooltip</small></u-sidebar-item>
             </u-sidebar-group>
-            <!-- <u-sidebar-group title="Feedback">
-                <u-sidebar-item exact to="/proto-ui/u-loading">加载中 <small>Loading</small></u-sidebar-item>
-                <u-sidebar-item exact to="/proto-ui/u-toast">吐司 <small>Toast</small></u-sidebar-item>
+            <u-sidebar-group title="Feedback">
+                <!-- <u-sidebar-item exact to="/proto-ui/u-loading">加载中 <small>Loading</small></u-sidebar-item> -->
+                <u-sidebar-item exact to="/proto-ui/u-toast">吐司提示 <small>Toast</small></u-sidebar-item>
                 <u-sidebar-item exact to="/proto-ui/u-modal">弹窗 <small>Modal</small></u-sidebar-item>
-                <u-sidebar-item exact to="/proto-ui/u-lightbox">灯箱 <small>Lightbox</small></u-sidebar-item>
-            </u-sidebar-group> -->
+                <!-- <u-sidebar-item exact to="/proto-ui/u-lightbox">灯箱 <small>Lightbox</small></u-sidebar-item> -->
+            </u-sidebar-group>
             <u-sidebar-group title="Effects">
                 <u-sidebar-item exact to="/proto-ui/u-carousel">走马灯 <small>Carousel</small></u-sidebar-item>
             </u-sidebar-group>

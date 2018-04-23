@@ -18,7 +18,7 @@ module.exports = {
         },
         resolve: {
             alias: {
-                library$: path.resolve(process.cwd(), 'index.js'),
+                library$: path.resolve(process.cwd(), './src/library.js'),
             },
         },
         module: {
