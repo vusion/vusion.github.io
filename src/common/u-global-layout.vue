@@ -36,7 +36,7 @@ export default {
     background: $brand-primary;
     color: white;
     box-shadow: 0 3px 4px rgba(0,0,0,0.1);
-    z-index: 10;
+    z-index: $z-index-layout;
 }
 
 .body {

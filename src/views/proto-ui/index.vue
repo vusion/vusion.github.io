@@ -5,6 +5,8 @@
             <u-sidebar-item><u-checkbox v-model="advanced" @check="onCheck">显示所有组件</u-checkbox></u-sidebar-item>
             <u-sidebar-group title="Basic">
                 <u-sidebar-item exact to="/proto-ui/base">基础 <small>Base</small></u-sidebar-item>
+                <u-sidebar-item exact to="/proto-ui/typography">排印 <small>Typography</small></u-sidebar-item>
+                <u-sidebar-item exact to="/proto-ui/u-text">文本 <small>Text</small></u-sidebar-item>
                 <u-sidebar-item exact to="/proto-ui/u-link">链接 <small>Link</small></u-sidebar-item>
                 <u-sidebar-item exact to="/proto-ui/u-button">按钮 <small>Button</small></u-sidebar-item>
                 <u-sidebar-item exact to="/proto-ui/u-badge">徽章 <small>Badge</small></u-sidebar-item>
@@ -65,11 +67,14 @@
                 <u-sidebar-item exact to="/proto-ui/u-modal">弹窗 <small>Modal</small></u-sidebar-item>
                 <u-sidebar-item exact to="/proto-ui/u-lightbox">灯箱 <small>Lightbox</small></u-sidebar-item>
             </u-sidebar-group> -->
-            <u-sidebar-group title="Progress & Chart">
+            <u-sidebar-group title="Effects">
+                <u-sidebar-item exact to="/proto-ui/u-carousel">走马灯 <small>Carousel</small></u-sidebar-item>
+            </u-sidebar-group>
+            <u-sidebar-group title="Progress & Charts">
                 <u-sidebar-item exact to="/proto-ui/u-linear-progress">线型进度条 <small>LinearProgress</small></u-sidebar-item>
                 <u-sidebar-item exact to="/proto-ui/u-circular-progress">圆型进度条 <small>CircularProgress</small></u-sidebar-item>
             </u-sidebar-group>
-            <u-sidebar-group v-if="advanced" title="Mixin & Utils">
+            <u-sidebar-group v-if="advanced" title="Mixins & Utils">
                 <u-sidebar-item exact to="/proto-ui/u-emitter">触发器 <small>Emitter</small></u-sidebar-item>
                 <u-sidebar-item exact to="/proto-ui/u-router-item">路由项 <small>RouterItem</small></u-sidebar-item>
                 <u-sidebar-item exact to="/proto-ui/u-collapse-transition">折叠过渡 <small>CollapseTransition</small></u-sidebar-item>
