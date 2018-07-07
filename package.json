@@ -40,7 +40,7 @@
     "husky": "^0.13.3",
     "markdown-it-for-inline": "^0.1.1",
     "shelljs": "^0.7.8",
-    "vue-markdown-html-loader": "^0.0.3",
+    "@vusion/md-vue-loader": "^0.1.1",
     "vusion-hooks": "^0.1.0"
   }
 }

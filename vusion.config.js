@@ -1,6 +1,5 @@
 const path = require('path');
-const hljs = require('highlight.js');
-
+const cheerio = require('cheerio');
 const iterator = require('markdown-it-for-inline');
 
 module.exports = {
@@ -30,38 +29,30 @@ module.exports = {
                         preserveWhitespace: false,
                     },
                 }, {
-                    loader: 'vue-markdown-html-loader',
+                    loader: '@vusion/md-vue-loader',
                     options: {
                         wrapper: 'u-article',
-                        // livePattern: {
-                        //     exec: (content) => [content, 'anonymous-' + hashSum(content)],
-                        // },
-                        // liveTemplateProcessor(template) {
-                        //     // Remove whitespace between tags
-                        //     template = template.trim().replace(/>\s+</g, '><');
-                        //     return `<div class="u-example">${template}</div>`;
-                        // },
-                        markdownIt: {
-                            langPrefix: 'lang-',
-                            html: true,
-                            highlight(str, rawLang) {
-                                let lang = rawLang;
-                                if (rawLang === 'vue')
-                                    lang = 'html';
-
-                                if (lang && hljs.getLanguage(lang)) {
-                                    try {
-                                        const result = hljs.highlight(lang, str).value;
-                                        return `<pre class="hljs ${this.langPrefix}${rawLang}"><code>${result}</code></pre>`;
-                                    } catch (e) {}
-                                }
-
-                                return '';
-                                // const result = this.utils.escapeHtml(str);
-                                // return `<pre class="hljs"><code>${result}</code></pre>`;
-                            },
+                        liveProcess(live, code) {
+                            // 不好直接用自定义标签，容易出问题
+                            return `<div class="u-example"><div>${live}</div><div slot="code"></div></div>\n\n${code}`;
                         },
-                        markdownItPlugins: [
+                        postprocess(result) {
+                            const $ = cheerio.load(result, {
+                                decodeEntities: false,
+                                lowerCaseAttributeNames: false,
+                                lowerCaseTags: false,
+                            });
+
+                            $('div.u-example').each(function () {
+                                const $this = $(this);
+                                $this.next().appendTo($this.children().last());
+                                this.tagName = 'u-example';
+                                $this.removeClass();
+                            });
+
+                            return $.html();
+                        },
+                        plugins: [
                             [iterator, 'link_converter', 'link_open', (tokens, idx) => tokens[idx].tag = 'u-link'],
                             [iterator, 'link_converter', 'link_close', (tokens, idx) => tokens[idx].tag = 'u-link'],
                         ],

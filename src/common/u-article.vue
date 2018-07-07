@@ -84,7 +84,7 @@ export default {
 .root > blockquote {
     margin: 0;
     padding: 4px 16px;
-    background: #fafafa;
+    background: #f7f7f7;
     border-left: 4px solid #eee;
 }
 
@@ -109,7 +109,7 @@ export default {
 .root code {
     padding: 0 3px;
     font-size: 12px;
-    background: #fafafa;
+    background: #f9f9f9;
     color: $brand-secondary;
     font-family: Monaco, Menlo, Consolas, monospace;
 }
@@ -117,7 +117,7 @@ export default {
 .root pre {
     padding: 6px 12px;
     font-size: 12px;
-    background: #fafafa;
+    background: #f9f9f9;
     color: #333;
     border: 1px solid #eee;
     border-radius: $border-radius-base;

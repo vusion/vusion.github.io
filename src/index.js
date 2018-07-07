@@ -15,6 +15,7 @@ import SidebarGroup from './common/u-sidebar-group.vue';
 import SidebarItem from './common/u-sidebar-item.vue';
 import Subnav from './common/u-subnav.vue';
 import SubnavItem from './common/u-subnav-item.vue';
+import Example from './common/u-example.vue';
 import './common/atom-one-light.css';
 import './common/base.css';
 
@@ -29,6 +30,7 @@ const UILibrary = Object.assign({}, ProtoUI, {
     SidebarItem,
     Subnav,
     SubnavItem,
+    Example,
 });
 
 import { install } from 'vusion-utils';
