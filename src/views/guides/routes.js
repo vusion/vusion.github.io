@@ -16,6 +16,7 @@ export default [
 
     { path: 'editor', component: () => import(/* webpackChunkName: 'guides' */ './editor.md') },
     { path: 'js-style', component: () => import(/* webpackChunkName: 'guides' */ 'eslint-config-vusion/JavaScript.zh-CN.md') },
+    { path: 'css-style', component: () => import(/* webpackChunkName: 'guides' */ 'stylelint-config-vusion/README.md') },
     { path: 'vue-style', component: () => import(/* webpackChunkName: 'guides' */ 'eslint-config-vusion/Vue.md?live=false') },
     { path: 'ui-style', component: () => import(/* webpackChunkName: 'guides' */ './ui-style.md') },
 ];

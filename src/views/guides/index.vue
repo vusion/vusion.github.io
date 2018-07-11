@@ -20,6 +20,7 @@
                 <u-sidebar-group title="风格指南">
                     <u-sidebar-item to="/guides/editor">编辑器配置</u-sidebar-item>
                     <u-sidebar-item to="/guides/js-style">JavaScript 风格</u-sidebar-item>
+                    <u-sidebar-item to="/guides/css-style">CSS 风格</u-sidebar-item>
                     <u-sidebar-item to="/guides/vue-style">Vue 风格</u-sidebar-item>
                     <u-sidebar-item to="/guides/ui-style">组件设计风格</u-sidebar-item>
                 </u-sidebar-group>
