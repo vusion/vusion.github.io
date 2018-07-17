@@ -37,20 +37,8 @@ module.exports = {
                             return `<div class="u-example"><div>${live}</div><div slot="code"></div></div>\n\n${code}`;
                         },
                         postprocess(result) {
-                            const $ = cheerio.load(result, {
-                                decodeEntities: false,
-                                lowerCaseAttributeNames: false,
-                                lowerCaseTags: false,
-                            });
-
-                            $('div.u-example').each(function () {
-                                const $this = $(this);
-                                $this.next().appendTo($this.children().last());
-                                this.tagName = 'u-example';
-                                $this.removeClass();
-                            });
-
-                            return $.html();
+                            const re = /<div class="u-example"><div>([\s\S]+?)<\/div><div slot="code"><\/div><\/div>\s+(<pre[\s\S]+?<\/pre>)/g;
+                            return result.replace(re, (m, live, code) => `<u-example><div>${live}</div><div slot="code">${code}</div></u-example>\n\n`);
                         },
                         plugins: [
                             [iterator, 'link_converter', 'link_open', (tokens, idx) => tokens[idx].tag = 'u-link'],
