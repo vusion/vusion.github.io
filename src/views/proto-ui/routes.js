@@ -31,6 +31,7 @@ export default [
     { path: 'u-select', component: () => import(/* webpackChunkName: "proto-ui" */ 'proto-ui.vusion/src/u-select.vue/README.md') },
     { path: 'u-cascade-select', component: () => import(/* webpackChunkName: "proto-ui" */ 'proto-ui.vusion/src/u-cascade-select.vue/README.md') },
     { path: 'u-region-select', component: () => import(/* webpackChunkName: "proto-ui" */ 'proto-ui.vusion/src/u-region-select.vue/README.md') },
+    { path: 'u-suggest', component: () => import(/* webpackChunkName: "proto-ui" */ 'proto-ui.vusion/src/u-suggest.vue/README.md') },
     { path: 'u-slider', component: () => import(/* webpackChunkName: "proto-ui" */ 'proto-ui.vusion/src/u-slider.vue/README.md') },
     { path: 'u-combo-slider', component: () => import(/* webpackChunkName: "proto-ui" */ 'proto-ui.vusion/src/u-combo-slider.vue/README.md') },
     { path: 'u-field', component: () => import(/* webpackChunkName: "proto-ui" */ 'proto-ui.vusion/src/u-field.vue/README.md') },
@@ -43,6 +44,8 @@ export default [
     { path: 'u-tooltip', component: () => import(/* webpackChunkName: "proto-ui" */ 'proto-ui.vusion/src/u-tooltip.vue/README.md') },
     { path: 'u-popup', component: () => import(/* webpackChunkName: "proto-ui" */ 'proto-ui.vusion/src/u-popup.vue/README.md') },
     /* Feedback */
+    { path: 'u-spinner', component: () => import(/* webpackChunkName: "proto-ui" */ 'proto-ui.vusion/src/u-spinner.vue/README.md') },
+    { path: 'u-loading', component: () => import(/* webpackChunkName: "proto-ui" */ 'proto-ui.vusion/src/u-loading.vue/README.md') },
     { path: 'u-toast', component: () => import(/* webpackChunkName: "proto-ui" */ 'proto-ui.vusion/src/u-toast.vue/README.md') },
     { path: 'u-modal', component: () => import(/* webpackChunkName: "proto-ui" */ 'proto-ui.vusion/src/u-modal.vue/README.md') },
     // { path: 'u-loading', component: () => import('../src/u-loading.vue/README.md') },
@@ -54,6 +57,7 @@ export default [
     /* Mixins & Utils */
     { path: 'u-emitter', component: () => import(/* webpackChunkName: "proto-ui" */ 'proto-ui.vusion/src/u-emitter.vue/README.md') },
     { path: 'u-router-item', component: () => import(/* webpackChunkName: "proto-ui" */ 'proto-ui.vusion/src/u-router-item.vue/README.md') },
+    { path: 'u-single-choices', component: () => import(/* webpackChunkName: "proto-ui" */ 'proto-ui.vusion/src/u-single-choices.vue/README.md') },
     { path: 'u-collapse-transition', component: () => import(/* webpackChunkName: "proto-ui" */ 'proto-ui.vusion/src/u-collapse-transition.vue/README.md') },
     { path: 'u-draggable', component: () => import(/* webpackChunkName: "proto-ui" */ 'proto-ui.vusion/src/u-draggable.vue/README.md') },
     { path: 'u-droppable', component: () => import(/* webpackChunkName: "proto-ui" */ 'proto-ui.vusion/src/u-droppable.vue/README.md') },

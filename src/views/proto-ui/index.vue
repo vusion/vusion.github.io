@@ -38,6 +38,7 @@
                 <u-sidebar-item exact to="/proto-ui/u-select">选择框 <small>Select</small></u-sidebar-item>
                 <u-sidebar-item exact to="/proto-ui/u-cascade-select">级联选择 <small>CascadeSelect</small></u-sidebar-item>
                 <u-sidebar-item exact to="/proto-ui/u-region-select">地区选择 <small>RegionSelect</small></u-sidebar-item>
+                <u-sidebar-item exact to="/proto-ui/u-suggest">自动提示 <small>Suggest</small></u-sidebar-item>
                 <u-sidebar-item exact to="/proto-ui/u-slider">滑块 <small>Slider</small></u-sidebar-item>
                 <u-sidebar-item exact to="/proto-ui/u-combo-slider">复合滑块 <small>ComboSlider</small></u-sidebar-item>
                 <u-sidebar-item disabled v-if="advanced" to="/proto-ui/u-field">表单控件 <small>Field</small></u-sidebar-item>
@@ -62,7 +63,8 @@
                 <u-sidebar-item exact to="/proto-ui/u-tooltip">工具提示 <small>Tooltip</small></u-sidebar-item>
             </u-sidebar-group>
             <u-sidebar-group title="Feedback">
-                <!-- <u-sidebar-item exact to="/proto-ui/u-loading">加载中 <small>Loading</small></u-sidebar-item> -->
+                <u-sidebar-item exact to="/proto-ui/u-spinner">加载图标 <small>Spinner</small></u-sidebar-item>
+                <u-sidebar-item exact to="/proto-ui/u-loading">加载中 <small>Loading</small></u-sidebar-item>
                 <u-sidebar-item exact to="/proto-ui/u-toast">吐司提示 <small>Toast</small></u-sidebar-item>
                 <u-sidebar-item exact to="/proto-ui/u-modal">弹窗 <small>Modal</small></u-sidebar-item>
                 <!-- <u-sidebar-item exact to="/proto-ui/u-lightbox">灯箱 <small>Lightbox</small></u-sidebar-item> -->

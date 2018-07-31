@@ -1,5 +1,4 @@
 const path = require('path');
-const cheerio = require('cheerio');
 const iterator = require('markdown-it-for-inline');
 
 module.exports = {
