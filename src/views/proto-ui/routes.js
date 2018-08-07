@@ -19,6 +19,7 @@ export default [
     { path: 'u-menu', component: () => import(/* webpackChunkName: "proto-ui" */ 'proto-ui.vusion/src/u-menu.vue/README.md') },
     { path: 'u-tabs', component: () => import(/* webpackChunkName: "proto-ui" */ 'proto-ui.vusion/src/u-tabs.vue/README.md') },
     { path: 'u-steps', component: () => import(/* webpackChunkName: "proto-ui" */ 'proto-ui.vusion/src/u-steps.vue/README.md') },
+    { path: 'u-crumb', component: () => import(/* webpackChunkName: "proto-ui" */ 'proto-ui.vusion/src/u-crumb.vue/README.md') },
     { path: 'u-pagination', component: () => import(/* webpackChunkName: "proto-ui" */ 'proto-ui.vusion/src/u-pagination.vue/README.md') },
     { path: 'u-collapse', component: () => import(/* webpackChunkName: "proto-ui" */ 'proto-ui.vusion/src/u-collapse.vue/README.md') },
     /* Form */
@@ -39,6 +40,7 @@ export default [
     /* Data */
     { path: 'u-list-view', component: () => import(/* webpackChunkName: "proto-ui" */ 'proto-ui.vusion/src/u-list-view.vue/README.md') },
     { path: 'u-tree-view', component: () => import(/* webpackChunkName: "proto-ui" */ 'proto-ui.vusion/src/u-tree-view.vue/README.md') },
+    { path: 'u-transfer', component: () => import(/* webpackChunkName: "proto-ui" */ 'proto-ui.vusion/src/u-transfer.vue/README.md') },
     /* Popper */
     { path: 'u-popper', component: () => import(/* webpackChunkName: "proto-ui" */ 'proto-ui.vusion/src/u-popper.vue/README.md') },
     { path: 'u-tooltip', component: () => import(/* webpackChunkName: "proto-ui" */ 'proto-ui.vusion/src/u-tooltip.vue/README.md') },

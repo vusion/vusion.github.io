@@ -24,6 +24,7 @@
                 <u-sidebar-item exact to="/proto-ui/u-menu">菜单 <small>Menu</small></u-sidebar-item>
                 <u-sidebar-item exact to="/proto-ui/u-tabs">标签页 <small>Tabs</small></u-sidebar-item>
                 <u-sidebar-item exact to="/proto-ui/u-steps">步骤条 <small>Steps</small></u-sidebar-item>
+                <u-sidebar-item exact to="/proto-ui/u-crumb">面包屑 <small>Crumb</small></u-sidebar-item>
                 <u-sidebar-item exact to="/proto-ui/u-pagination">翻页器 <small>Pagination</small></u-sidebar-item>
                 <u-sidebar-item exact to="/proto-ui/u-collapse">折叠面板 <small>Collapse</small></u-sidebar-item>
             </u-sidebar-group>
@@ -48,6 +49,7 @@
             <u-sidebar-group title="Data">
                 <u-sidebar-item exact to="/proto-ui/u-list-view">列表选择 <small>ListView</small></u-sidebar-item>
                 <u-sidebar-item exact to="/proto-ui/u-tree-view">树型选择 <small>TreeView</small></u-sidebar-item>
+                <u-sidebar-item exact to="/proto-ui/u-transfer">穿梭框 <small>Transfer</small></u-sidebar-item>
             <!-- <u-sidebar-item exact to="/proto-ui/u-table-view">表格视图 <small>TableView</small></u-sidebar-item> -->
             <!-- <u-sidebar-item exact to="/proto-ui/u-capsules">胶囊 <small>Capsules</small></u-sidebar-item> -->
             </u-sidebar-group>

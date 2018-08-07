@@ -304,7 +304,7 @@ export default {
         submit() {
             this.$refs.form.validate()
                 .then(() => alert('提交成功'))
-                .catch(() => {});
+                .catch(() => { /* noop */ });
         },
     },
 };
@@ -892,7 +892,7 @@ export default {
     <u-form-item label="IP地址" required :rules="rules">
         <e-ip-input v-model="model.ip"></e-ip-input>
     </u-form-item>
-    <u-form-item><u-button color="primary" @click="$refs.form.validate().catch(() => {})">提交</u-button></u-form-item>
+    <u-form-item><u-button color="primary" @click="$refs.form.validate().catch(() => { /* noop */ })">提交</u-button></u-form-item>
 </u-form>
 </template>
 

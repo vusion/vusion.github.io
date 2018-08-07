@@ -4,6 +4,7 @@ const iterator = require('markdown-it-for-inline');
 module.exports = {
     type: 'app',
     version: '>=0.6.0',
+    // lint: true,
     clean: false,
     extractCSS: true,
     webpack: {
