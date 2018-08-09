@@ -69,6 +69,7 @@
                 <u-sidebar-item exact to="/proto-ui/u-loading">加载中 <small>Loading</small></u-sidebar-item>
                 <u-sidebar-item exact to="/proto-ui/u-toast">吐司提示 <small>Toast</small></u-sidebar-item>
                 <u-sidebar-item exact to="/proto-ui/u-modal">弹窗 <small>Modal</small></u-sidebar-item>
+                <u-sidebar-item exact to="/proto-ui/u-drawer">抽屉 <small>Drawer</small></u-sidebar-item>
                 <!-- <u-sidebar-item exact to="/proto-ui/u-lightbox">灯箱 <small>Lightbox</small></u-sidebar-item> -->
             </u-sidebar-group>
             <u-sidebar-group title="Effects">

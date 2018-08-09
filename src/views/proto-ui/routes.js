@@ -50,7 +50,7 @@ export default [
     { path: 'u-loading', component: () => import(/* webpackChunkName: "proto-ui" */ 'proto-ui.vusion/src/u-loading.vue/README.md') },
     { path: 'u-toast', component: () => import(/* webpackChunkName: "proto-ui" */ 'proto-ui.vusion/src/u-toast.vue/README.md') },
     { path: 'u-modal', component: () => import(/* webpackChunkName: "proto-ui" */ 'proto-ui.vusion/src/u-modal.vue/README.md') },
-    // { path: 'u-loading', component: () => import('../src/u-loading.vue/README.md') },
+    { path: 'u-drawer', component: () => import(/* webpackChunkName: "proto-ui" */ 'proto-ui.vusion/src/u-drawer.vue/README.md') },
     /* Effects */
     { path: 'u-carousel', component: () => import(/* webpackChunkName: "proto-ui" */ 'proto-ui.vusion/src/u-carousel.vue/README.md') },
     /* Progress & Charts */
