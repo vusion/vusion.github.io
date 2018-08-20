@@ -29,6 +29,9 @@
                 <u-sidebar-item exact to="/proto-ui/u-collapse">折叠面板 <small>Collapse</small></u-sidebar-item>
             </u-sidebar-group>
             <u-sidebar-group title="Form">
+                <u-sidebar-item exact to="/proto-ui/u-form">表单 <small>Form</small></u-sidebar-item>
+                <!-- <u-sidebar-item v-if="advanced" to="/proto-ui/u-form-item">表单项 <small>FormItem</small></u-sidebar-item> -->
+                <u-sidebar-item disabled v-if="advanced" to="/proto-ui/u-field">表单控件 <small>Field</small></u-sidebar-item>
                 <u-sidebar-item exact to="/proto-ui/u-input">单行输入 <small>Input</small></u-sidebar-item>
                 <u-sidebar-item exact to="/proto-ui/u-number-input">数字输入 <small>NumberInput</small></u-sidebar-item>
                 <u-sidebar-item exact to="/proto-ui/u-textarea">多行输入 <small>Textarea</small></u-sidebar-item>
@@ -42,9 +45,7 @@
                 <u-sidebar-item exact to="/proto-ui/u-suggest">自动提示 <small>Suggest</small></u-sidebar-item>
                 <u-sidebar-item exact to="/proto-ui/u-slider">滑块 <small>Slider</small></u-sidebar-item>
                 <u-sidebar-item exact to="/proto-ui/u-combo-slider">复合滑块 <small>ComboSlider</small></u-sidebar-item>
-                <u-sidebar-item disabled v-if="advanced" to="/proto-ui/u-field">表单控件 <small>Field</small></u-sidebar-item>
-                <!-- <u-sidebar-item v-if="advanced" to="/proto-ui/u-form-item">表单项 <small>FormItem</small></u-sidebar-item> -->
-                <u-sidebar-item exact to="/proto-ui/u-form">表单 <small>Form</small></u-sidebar-item>
+                <u-sidebar-item exact to="/proto-ui/u-uploader">文件上传 <small>Uploader</small></u-sidebar-item>
             </u-sidebar-group>
             <u-sidebar-group title="Data">
                 <u-sidebar-item exact to="/proto-ui/u-list-view">列表选择 <small>ListView</small></u-sidebar-item>
