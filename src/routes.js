@@ -10,12 +10,6 @@ import conceptsRoutes from './views/concepts/routes';
 import API from './views/api/index.vue';
 import apiRoutes from './views/api/routes';
 
-import UIDesign from './views/ui-design/index.vue';
-import uiDesignRoutes from './views/ui-design/routes';
-
-import ProtoUI from './views/proto-ui/index.vue';
-import protoUIRoutes from './views/proto-ui/routes';
-
 import Libraries from './views/libraries.vue';
 
 const Empty = Vue.extend({ template: '<div>待完善...</div>' });
@@ -27,8 +21,6 @@ export default [
         { path: 'guides', component: Guides, children: guidesRoutes },
         { path: 'concepts', component: Concepts, children: conceptsRoutes },
         { path: 'api', component: API, children: apiRoutes },
-        { path: 'ui-design', component: UIDesign, children: uiDesignRoutes },
-        { path: 'proto-ui', component: ProtoUI, children: protoUIRoutes },
         { path: 'libraries', component: Libraries },
         { path: 'examples', component: Empty },
     ] },
