@@ -25,7 +25,7 @@ export default {
     props: {
         title: String,
         logo: { type: String, default: 'default' },
-        logoColor: { type: String, default: '#1ba67e' },
+        logoColor: { type: String, default: '#457cd0' },
         brief: String,
         colors: Array,
         more: { type: Boolean, default: false },
@@ -41,14 +41,17 @@ export default {
 <style module>
 .root {
     position: relative;
-    display: block;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
     width: 270px;
     height: 185px;
-    box-sizing: border-box;
     padding: 20px;
     background: white;
-    box-shadow: 0 0 2px 0 rgba(80,90,109,0.16);
+    border-radius: 4px;
+    border: 1px solid #e1e8ed;
     cursor: default;
+    margin: 15px;
 }
 
 .root[disabled] {
@@ -64,7 +67,7 @@ export default {
 }
 
 .root[href]:hover {
-    box-shadow: 0 0 10px 0 rgba(80,90,109,0.16);
+    box-shadow: 0 2px 10px rgba(90,95,100,0.12);
 }
 
 .head {
@@ -77,31 +80,32 @@ export default {
     height: 40px;
     text-align: center;
     line-height: 40px;
-    border-radius: 50%;
-    color: #fff;
-    font-size: 16px;
+    border-radius: 8px;
+    color: white;
+    font-size: 24px;
+    font-family: 'Gill sans', sans-serif;
 }
 
 .logo[name="163yun"] {
     display: inline-block;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     margin-top: -5px;
     vertical-align: middle;
     background: url(../assets/logo-163yun.svg) no-repeat;
-    background-size: 100% 100%;
+    background-size: 100%;
 }
 
 .title {
     display: inline-block;
-    margin-left: 10px;
+    margin-left: 15px;
     line-height: 40px;
     font-size: 20px;
     color: #2c3e50;
 }
 
 .body {
-    margin: 10px 0 15px;
+    margin: 15px 0;
     height: 60px;
     color: #616e7c;
     font-size: 14px;

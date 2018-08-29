@@ -25,7 +25,7 @@
     "solution"
   ],
   "dependencies": {
-    "proto-ui.vusion": "~0.3.8",
+    "vusion-ui.vusion": "vusion/vusion-ui",
     "vue": "^2.5.0",
     "vue-router": "^3.0.0",
     "vusion-utils": "^0.2.1"

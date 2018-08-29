@@ -1,7 +1,7 @@
 <template>
     <div>
         <div :class="$style.side">
-            <u-sidebar>
+            <u-sidebar :class="$style.sidebar">
                 <u-sidebar-item to="/concepts/technical-selection">技术选型</u-sidebar-item>
                 <u-sidebar-item to="/concepts/modularity">模块化</u-sidebar-item>
                 <u-sidebar-item to="/concepts/component-based">组件化</u-sidebar-item>
@@ -24,18 +24,26 @@
 
 <style module>
 .side {
-    padding: 20px 0;
     position: fixed;
-    width: 200px;
-    top: 90px;
+    width: $sidebar-width;
+    top: $navbar-height;
     bottom: 0;
-    /* height: calc(100vh - 134px); */
-    color: #34495e;
-    overflow: auto;
+    overflow: hidden;
+}
+
+.sidebar {
+    width: calc($sidebar-width + 8px);
+}
+
+.sidebar > * {
+    width: $sidebar-width;
 }
 
 .main {
-    margin-left: 210px;
-    padding: 40px;
+    margin-left: $sidebar-width;
+    max-width: 1010px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+    padding-top: 30px;
 }
 </style>

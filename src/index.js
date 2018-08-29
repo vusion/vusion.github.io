@@ -2,34 +2,18 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 Vue.use(VueRouter);
 
-import * as ProtoUI from 'proto-ui.vusion';
-import 'proto-ui.vusion/src/base/base.css';
+import 'vusion-ui.vusion/src/base/base.css';
+import * as VusionUI from 'vusion-ui.vusion';
 
-import GlobalLayout from './common/u-global-layout.vue';
 import Article from './common/u-article.vue';
-import Logo from './common/u-logo.vue';
 import Library from './common/u-library.vue';
-import Navbar from './common/u-navbar.vue';
-import NavbarItem from './common/u-navbar-item.vue';
-import SidebarGroup from './common/u-sidebar-group.vue';
-import SidebarItem from './common/u-sidebar-item.vue';
-import Subnav from './common/u-subnav.vue';
-import SubnavItem from './common/u-subnav-item.vue';
 import Example from './common/u-example.vue';
-import './common/atom-one-light.css';
 import './common/base.css';
 
-const UILibrary = Object.assign({}, ProtoUI, {
-    GlobalLayout,
+const UILibrary = Object.assign({}, VusionUI, {
+    // GlobalLayout,
     Article,
-    Logo,
     Library,
-    Navbar,
-    NavbarItem,
-    SidebarGroup,
-    SidebarItem,
-    Subnav,
-    SubnavItem,
     Example,
 });
 

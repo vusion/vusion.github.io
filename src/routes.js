@@ -1,6 +1,6 @@
 import Vue from 'vue';
-import Layout from './views/layout.vue';
 import Index from './views/index.vue';
+import Home from './views/home.vue';
 import Features from './views/index.md';
 
 import Guides from './views/guides/index.vue';
@@ -21,8 +21,8 @@ import Libraries from './views/libraries.vue';
 const Empty = Vue.extend({ template: '<div>待完善...</div>' });
 
 export default [
-    { path: '/', component: Layout, children: [
-        { path: '', component: Index, redirect: '/guides' },
+    { path: '/', component: Index, children: [
+        { path: '', component: Home, redirect: '/guides' },
         // { path: 'features', component: Features },
         { path: 'guides', component: Guides, children: guidesRoutes },
         { path: 'concepts', component: Concepts, children: conceptsRoutes },
