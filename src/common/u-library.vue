@@ -48,10 +48,15 @@ export default {
     height: 185px;
     padding: 20px;
     background: white;
-    border-radius: 4px;
-    border: 1px solid #e1e8ed;
+    /* border: 1px solid #e1e8ed; */
     cursor: default;
     margin: 15px;
+    box-shadow: 0 2px 10px hsla(216,10%,28%,0.05);
+    transition: box-shadow $transition-duration-slow;
+}
+
+.root:hover {
+    box-shadow: 0 2px 15px rgba(64,69,78,0.15);
 }
 
 .root[disabled] {
@@ -80,10 +85,21 @@ export default {
     height: 40px;
     text-align: center;
     line-height: 40px;
-    border-radius: 8px;
+    border-radius: 5px;
     color: white;
     font-size: 24px;
     font-family: 'Gill sans', sans-serif;
+}
+
+.logo[name="vusion"] {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-top: -5px;
+    vertical-align: middle;
+    background: $brand-primary url(../assets/logo-inverse-square.svg) center center no-repeat;
+    background-size: 80%;
+    border-radius: 5px;
 }
 
 .logo[name="163yun"] {

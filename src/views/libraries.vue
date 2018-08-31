@@ -1,6 +1,6 @@
 <template>
     <div :class="$style.root">
-        <u-library :colors="['#457cd0', '#575962']" target="_blank" title="Vusion UI" brief="UI库" href="https://vusion.github.io/vusion-ui">
+        <u-library :colors="['#457cd0', '#575962']" target="_blank" title="Vusion UI" logo="vusion" brief="UI库" href="https://vusion.github.io/vusion-ui">
             Vusion 官方提供的标准组件库，美观大方、功能完善，用于快速搭建网站。
         </u-library>
         <u-library :colors="['#457cd0', '#f4f5f9']" target="_blank" title="Proto UI" brief="UI库" href="https://vusion.github.io/proto-ui">
@@ -41,5 +41,7 @@ export default {
     padding: 40px 0;
     height: calc(100vh - $navbar-height);
     text-align: center;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 </style>
