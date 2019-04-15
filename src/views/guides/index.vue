@@ -1,7 +1,7 @@
 <template>
     <div>
         <div :class="$style.side">
-            <u-sidebar :class="$style.sidebar">
+            <u-sidebar :class="$style.sidebar" color="inverse">
                 <u-sidebar-group title="教程">
                     <u-sidebar-item to="/guides/introduction">介绍</u-sidebar-item>
                     <u-sidebar-item to="/guides/installation">安装</u-sidebar-item>

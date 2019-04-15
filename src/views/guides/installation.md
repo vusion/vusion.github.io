@@ -34,4 +34,4 @@ npm install -g mocha chai
 
 ### 下一步
 
-接下来我们会以[创建新项目](/guides/quickstart)为开始，教您如何使用命令行工具。
+接下来我们会以[创建新项目](/guides/quickstart)为开始，教你如何使用命令行工具。

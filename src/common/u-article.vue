@@ -64,6 +64,10 @@ export default {
     padding-left: 20px;
 }
 
+.root > ul > li {
+    list-style: disc;
+}
+
 .root > ol {
     padding-left: 20px;
     list-style: decimal;

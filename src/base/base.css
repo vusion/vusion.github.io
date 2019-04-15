@@ -1,0 +1,59 @@
+body {
+    color: $color-base;
+    font: 14px/1.6 $font-family-zh-CN;
+    -webkit-font-smoothing: antialiased;
+}
+
+h6 {
+    margin: 1em 0;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid $border-color-base;
+}
+
+blockquote {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 8px 16px;
+    border-left: 4px solid $border-color-base;
+}
+
+
+dt {
+    font-weight: bold;
+}
+
+dd {
+    margin-left: 0;
+}
+
+pre {
+    tab-size: 4;
+    /* Contain overflow in all browsers. */
+    overflow: auto;
+    background: $background-color-light;
+    border-radius: $border-radius-base;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-family: $font-family-code;
+}
+
+code {
+    padding: 0 3px;
+    font-size: 12px;
+    font-family: $font-family-code;
+    background: $background-color-light;
+    color: #e0276e;
+}
+
+pre code {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font-size: inherit;
+    color: inherit;
+    /* white-space: pre-wrap; */
+}

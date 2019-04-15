@@ -8,7 +8,7 @@ import * as VusionUI from 'vusion-ui.vusion';
 import Article from './common/u-article.vue';
 import Library from './common/u-library.vue';
 import Example from './common/u-example.vue';
-import './common/base.css';
+import './base/base.css';
 
 const UILibrary = Object.assign({}, VusionUI, {
     // GlobalLayout,

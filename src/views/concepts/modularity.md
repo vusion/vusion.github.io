@@ -24,9 +24,9 @@ Webpack这样处理了之后，有三大优势：
 
 Vusion CLI已经集成了[babel-loader](https://github.com/babel/babel-loader)，同时添加了默认配置[\<code\>](https://github.com/vusion/vusion-cli/blob/master/webpack/base.js#L98)，但不会立即生效。
 
-如果您对浏览器的兼容性没有要求，即只要最新的现代浏览器支持就行，比如Chrome、Firfox、Safari，或者通过Electron来驱动App，并且在代码中没有使用到ECMAScript的一些未来特性。那么不需要babel也可以运行。
+如果你对浏览器的兼容性没有要求，即只要最新的现代浏览器支持就行，比如Chrome、Firfox、Safari，或者通过Electron来驱动App，并且在代码中没有使用到ECMAScript的一些未来特性。那么不需要babel也可以运行。
 
-否则，您需要在项目根路径下添加一个`.babelrc`文件，Vusion根据这个文件是否存在来判断启不启用`babel-loader`。
+否则，你需要在项目根路径下添加一个`.babelrc`文件，Vusion根据这个文件是否存在来判断启不启用`babel-loader`。
 
 最简单的方式是：
 
@@ -290,4 +290,4 @@ svg-sprite拥有css-sprite不具备的调整大小特性。
 
 ###
 
-模块化解决了前端工程中各种资源的组织问题，那么在用户界面（UI）层面上，如何将一个复杂工程进行分解复用，并进行高效的管理，这就属于组件化方面的范畴了，下一节将会为您详细讲述。
+模块化解决了前端工程中各种资源的组织问题，那么在用户界面（UI）层面上，如何将一个复杂工程进行分解复用，并进行高效的管理，这就属于组件化方面的范畴了，下一节将会为你详细讲述。

@@ -4,7 +4,7 @@
 
 ### 为什么要选择Vue？
 
-在Vue的文档中已经有了一篇详细的[对比其他框架](https://cn.vuejs.org/v2/guide/comparison.html)一文，如果您没有阅读过可以先看一下。
+在Vue的文档中已经有了一篇详细的[对比其他框架](https://cn.vuejs.org/v2/guide/comparison.html)一文，如果你没有阅读过可以先看一下。
 
 但我们还是想用自己的角度来解答这个问题。
 

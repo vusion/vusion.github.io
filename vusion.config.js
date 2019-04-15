@@ -7,6 +7,7 @@ module.exports = {
     // lint: true,
     clean: false,
     extractCSS: true,
+    libraryPath: './node_modules/vusion-ui.vusion/src',
     webpack: {
         entry: {
             bundle: ['babel-polyfill', './src/index.js'],

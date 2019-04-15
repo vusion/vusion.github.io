@@ -1,5 +1,6 @@
 <template>
-    <div :class="$style.root">
+<div :class="$style.root">
+    <div :class="$style.main">
         <u-library :colors="['#457cd0', '#575962']" target="_blank" title="Vusion UI" logo="vusion" brief="UI库" href="https://vusion.github.io/vusion-ui">
             Vusion 官方提供的标准组件库，美观大方、功能完善，用于快速搭建网站。
         </u-library>
@@ -10,7 +11,7 @@
             Vusion 图标库
         </u-library>
         <u-library :colors="['#67aaf5', '#4a89e8', '#2cb78e']" target="_blank" title="Cloud UI" logo="163yun" brief="UI库"
-                   href="https://vusion.github.io/cloud-ui">
+                    href="https://vusion.github.io/cloud-ui">
             扩展自 Proto UI，组件完善、功能强大、多套主题，用于快速构建网易云风格的 Web 应用。
         </u-library>
         <u-library target="_blank" title="NetEase UI" disabled logo-color="#e24244"></u-library>
@@ -21,6 +22,7 @@
         </u-library>
         <u-library more href="mailto:rainforest92@126.com?subject=%E6%88%91%E4%BB%AC%E6%83%B3%E6%8F%90%E4%BE%9B%E4%B8%80%E5%A5%97%E8%87%AA%E5%B7%B1%E7%9A%84%E7%BB%84%E4%BB%B6%E5%BA%93"></u-library>
     </div>
+</div>
 </template>
 
 <script>
@@ -41,6 +43,9 @@ export default {
     padding: 40px 0;
     height: calc(100vh - $navbar-height);
     text-align: center;
+}
+
+.main {
     max-width: 1440px;
     margin: 0 auto;
 }
