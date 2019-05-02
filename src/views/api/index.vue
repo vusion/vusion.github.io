@@ -1,7 +1,7 @@
 <template>
     <div>
         <div :class="$style.side">
-            <u-sidebar :class="$style.sidebar">
+            <u-sidebar :class="$style.sidebar" color="inverse">
                 <u-sidebar-item to="/api/cli">命令行工具（CLI）</u-sidebar-item>
                 <u-sidebar-item to="/api/config">配置</u-sidebar-item>
             </u-sidebar>

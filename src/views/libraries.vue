@@ -41,7 +41,7 @@ export default {
     /* display: flex;
     flex-wrap: wrap; */
     padding: 40px 0;
-    height: calc(100vh - $navbar-height);
+    min-height: calc(100vh - $navbar-height);
     text-align: center;
 }
 

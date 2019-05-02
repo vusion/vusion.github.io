@@ -11,6 +11,7 @@ import API from './views/api/index.vue';
 import apiRoutes from './views/api/routes';
 
 import Libraries from './views/libraries.vue';
+import Templates from './views/templates.vue';
 
 const Empty = Vue.extend({ template: '<div>待完善...</div>' });
 
@@ -22,6 +23,7 @@ export default [
         { path: 'concepts', component: Concepts, children: conceptsRoutes },
         { path: 'api', component: API, children: apiRoutes },
         { path: 'libraries', component: Libraries },
+        { path: 'templates', component: Templates },
         { path: 'examples', component: Empty },
     ] },
     { path: '*', redirect: '/guides' },
