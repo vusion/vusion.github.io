@@ -64,13 +64,18 @@ Webpack 的模块引入字符串可以将`index.js`部分省略，两种书写�
 
 ``` xhtml
 <script>
-import Select from 'proto-ui.vusion/src/u-select.vue';
+import { USelect as OSelect } from 'proto-ui.vusion/src/components/u-select.vue';
 
-export default Select;
+export const USelect = {
+    name: 'u-select',
+    extends: USelect,
+};
+
+export default USelect;
 </script>
 
 <style module>
-@import 'proto-ui.vusion/src/u-select.vue';
+@import 'proto-ui.vusion/src/components/u-select.vue';
 
 .root {
     height: 36px;
@@ -85,15 +90,22 @@ export default Select;
 
 在 Vusion 中资源问题都是样式问题。
 
+在样式中，我们提供了一种继承的简写方式`@extend;`，它可能根据 JS 中的`extends`自动查找依赖。
+
 ``` xhtml
 <script>
-import Select from 'proto-ui.vusion/src/u-select.vue';
+import { USelect as OSelect } from 'proto-ui.vusion/src/components/u-select.vue';
 
-export default Select;
+export const USelect = {
+    name: 'u-select',
+    extends: USelect,
+};
+
+export default USelect;
 </script>
 
 <style module>
-@import 'proto-ui.vusion/src/u-select.vue';
+@extend;
 
 .root:before {
     icon-font: url('../assets/my-arrow-down.svg');
@@ -107,16 +119,18 @@ export default Select;
 
 ``` xhtml
 <script>
-import Select from 'proto-ui.vusion/src/u-select.vue';
+import USelect from 'proto-ui.vusion/src/components/u-select.vue';
 
-export default {
+export const UCustomSelect = {
     name: 'u-custom-select',
-    mixins: [Select],
+    extends: USelect,
 };
+
+export default UCustomSelect;
 </script>
 
 <style module>
-@import 'proto-ui.vusion/src/u-select.vue';
+@extend;
 
 .root {
     height: 36px;
@@ -127,16 +141,18 @@ export default {
 
 #### 继承并重写样式
 
-不用在`<style>`标签中`@import`原组件的样式，便可以重写组件样式，并仍然使用原组件的模板和逻辑。
+不用在`<style>`标签中`@import`或`@extend`原组件的样式，便可以重写组件样式，并仍然使用原组件的模板和逻辑。
 
 ``` xhtml
 <script>
-import Select from 'proto-ui.vusion/src/u-select.vue';
+import USelect from 'proto-ui.vusion/src/components/u-select.vue';
 
-export default {
+export const UCustomSelect = {
     name: 'u-custom-select',
-    mixins: [Select],
+    extends: USelect,
 };
+
+export default UCustomSelect;
 </script>
 
 <style module>
@@ -157,17 +173,19 @@ export default {
 
 ``` xhtml
 <script>
-import Select from 'proto-ui.vusion/src/u-select.vue';
+import { USelect as OSelect } from 'proto-ui.vusion/src/components/u-select.vue';
 
-export default {
+export const USelect = {
     name: 'u-select',
-    mixins: [Select],
+    extends: OSelect,
     methods: {
         select() {
             // override
         },
     },
 };
+
+export default USelect;
 </script>
 ```
 
@@ -177,17 +195,19 @@ export default {
 
 ``` xhtml
 <script>
-import Select from 'proto-ui.vusion/src/u-select.vue';
+import USelect from 'proto-ui.vusion/src/components/u-select.vue';
 
-export default {
+export const UCustomSelect = {
     name: 'u-custom-select',
-    mixins: [Select],
+    extends: USelect,
     methods: {
         select() {
             // override
         },
     },
 };
+
+export default UCustomSelect;
 </script>
 ```
 
@@ -201,12 +221,14 @@ export default {
 </template>
 
 <script>
-import Select from 'proto-ui.vusion/src/u-select.vue';
+import USelect from 'proto-ui.vusion/src/components/u-select.vue';
 
-export default {
+export const USelect = {
     name: 'u-select',
-    mixins: [Select],
+    extends: USelect,
 };
+
+export default USelect;
 </script>
 ```
 
@@ -218,19 +240,23 @@ export default {
 </template>
 
 <script>
-export default {
+import USelect from 'proto-ui.vusion/src/components/u-select.vue';
+
+export const UCustomSelect = {
     name: 'u-custom-select',
-    mixins: [Select],
+    extends: USelect,
     methods: {
         select() {
             // override
         },
     },
 };
+
+export UCustomSelect;
 </script>
 
 <style module>
-@import 'proto-ui.vusion/src/u-select.vue';
+@extends;
 
 .root:before {
     height: 36px;

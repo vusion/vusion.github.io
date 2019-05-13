@@ -13,24 +13,26 @@
 为了让以上三种级别的组件库能够形成派生关系，并且组件能在其中平滑迁移，它们必须有相同的结构。
 
 ```
-library/
-├─ index.js                         # 索引文件
-├─ base/                            # 基础配置
-│   ├─ global.css                   # CSS 的全局变量。将会注入到每个 CSS 文件中，请不要添加除变量声明之外的内容，否则会产生大量的 CSS
-│   ├─ base.css                     # 基础 CSS 排版样式。
-├─ category/                        # 二级目录，用于分类
-│   ├─ u-search-box.vue
-│   ├─ u-timeline.vue
-│   └─ ...
-├─ u-select.vue                     # Select 组件
-├─ u-select-item.vue
-├─ u-pagination.vue                 # Pagination 组件
-└─ ...                              # 其它组件
+.
+├─ src/                             # 源文件
+│   ├─ index.js                     # 索引文件
+│   ├─ base/                        # 基础配置
+│   │   ├─ global.css               # CSS 的全局变量。将会注入到每个 CSS 文件中，请不要添加除变量声明之外的内容，否则会产生大量的 CSS
+│   │   ├─ base.css                 # 基础 CSS 排版样式。
+│   │   ├─ ...
+│   ├─ assets/                      # 资源目录。存放 Webpack 里需要 import 的资源文件
+│   ├─ components/                  # 组件目录
+│   │   ├─ category/                        # 二级目录，用于分类
+│   │   │   ├─ u-search-box.vue
+│   │   │   ├─ u-timeline.vue
+│   │   │   └─ ...
+│   │   ├─ u-select.vue                     # Select 组件
+│   │   ├─ u-select-item.vue
+│   │   ├─ u-pagination.vue                 # Pagination 组件
+│   │   └─ ...                              # 其它组件
 ```
 
-组件库在 App 项目中一般对应`src/components`目录，在 UI Library 项目中一般对应`src`目录。路径可以用`libraryPath`字段进行配置。
-
-组件库中建议最多只包括二级目录，如果有更深层的目录，可以考虑将组件放在页面模块中。
+组件目录中建议最多只包括二级目录，如果有更深层的目录，可以考虑将组件放在页面模块中。
 
 ### 索引文件
 
@@ -41,28 +43,21 @@ library/
 ``` js
 export * from 'proto-ui.vusion';
 
-import Select from './u-select.vue';
-import SelectItem from './u-select-item.vue';
-import Well from './u-well.vue';
-
-export {
-    Select,
-    SelectItem,
-    Well,
-};
+export { USelect, USelectItem } from './u-select.vue';
+export { UWell } from './u-well.vue';
 ```
 
-如果要将这个库中的组件注册到 Vue 全局，只需使用`vusion-utils`的`installComponents`：
+如果要将这个库中的组件注册到 Vue 全局，只需使用`vusion-utils`的`install`：
 
 ``` js
 import Vue from 'vue';
 
-import * as Components from 'library';
-import { installComponents } from 'vusion-utils';
-installComponents(Components, Vue);
+import * as Components from '@@/components';
+import { install } from 'vusion-utils';
+install(Vue, Components);
 ```
 
-`library`是 Vusion 在 Webpack 中为`libraryPath`自动添加的别名。
+`@@`是 Vusion 在 Webpack 中为`libraryPath`自动添加的别名。
 
 ### 设计方案
 

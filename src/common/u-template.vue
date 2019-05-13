@@ -5,7 +5,7 @@
         <div :class="$style.title">{{ title }}</div>
     </div>
     <div :class="$style.buttons">
-        <a :class="$style.button" role="preview" :href="`https://vusion.dev/${name}`" target="_blank">效果预览</a>
+        <a :class="$style.button" disabled role="preview" :href="`https://vusion.dev/${name}`" target="_blank">效果预览</a>
         <a :class="$style.button" role="github" :href="`https://github.com/vusion-templates/${name}`" target="_blank">查看源码</a>
         <a :class="$style.button" role="download" :href="`https://github.com/vusion-templates/${name}/archive/master.zip`" target="_blank">一键下载</a>
     </div>
@@ -92,6 +92,12 @@ export default {
     font-size: 17px;
     vertical-align: -3px;
     margin-right: 4px;
+}
+
+.button[disabled] {
+    cursor: not-allowed;
+    background: $brand-primary;
+    color: rgba(255, 255, 255, 0.5);
 }
 
 .root:hover .buttons {

@@ -10,11 +10,13 @@ Vusion 是一套基于 Webpack + Vue 的前端解决方案，包括架构模型�
 - Vusion IDE
 - Vusion CLI
 
-#### Vusion 有一套默认的组件库
+#### Vusion 有几套默认的组件库
 - Proto UI
+- Vusion UI
+- Cloud UI
 
 #### Vusion 目前支持的项目类型有
-- 各种类型的 Web 应用（app）
+- 各种类型的 Web 应用（web-app）
 - 组件库或工具库（library）
 
 ### 下一步
