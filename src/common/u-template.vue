@@ -29,13 +29,13 @@ export default {
     display: inline-block;
     width: 500px;
     margin: 20px 30px;
-    box-shadow: 0 2px 10px hsla(216,10%,28%,0.05);
+    box-shadow: 0 2px 10px hsla(216, 10%, 28%, 0.05);
     background: white;
     overflow: hidden;
 }
 
 .root:hover {
-    box-shadow: 0 2px 15px rgba(64,69,78,0.15);
+    box-shadow: 0 2px 15px rgba(64, 69, 78, 0.15);
 }
 
 .body {
