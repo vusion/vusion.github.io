@@ -5,10 +5,10 @@ Vue.use(VueRouter);
 import 'vusion-ui.vusion/src/base/base.css';
 import * as VusionUI from 'vusion-ui.vusion';
 
-import Article from './common/u-article.vue';
-import Library from './common/u-library.vue';
-import Example from './common/u-example.vue';
-import Template from './common/u-template.vue';
+import Article from './components/u-article.vue';
+import Library from './components/u-library.vue';
+import Example from './components/u-example.vue';
+import Template from './components/u-template.vue';
 import './base/base.css';
 
 const UILibrary = Object.assign({}, VusionUI, {
