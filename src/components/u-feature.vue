@@ -60,6 +60,7 @@ export default {
     right: 0;
     margin-top: 20px;
     transition: bottom 0.2s;
+    display: flex;
 }
 
 .root:hover .buttons {

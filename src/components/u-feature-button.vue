@@ -12,8 +12,9 @@ export default {
 
 <style module>
 .root {
-    display: inline-block;
-    width: 33.33%;
+    /* display: inline-block; */
+    /* width: 33.33%; */
+    flex: 1;
     line-height: 40px;
     min-height: 40px;
     vertical-align: bottom;
@@ -40,6 +41,12 @@ export default {
 }
 .root[role="download"]::before {
     icon-font: url('../assets/download.svg');
+    font-size: 17px;
+    vertical-align: -3px;
+    margin-right: 4px;
+}
+.root[role="document"]::before {
+    icon-font: url('../assets/document.svg');
     font-size: 17px;
     vertical-align: -3px;
     margin-right: 4px;
