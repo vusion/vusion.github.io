@@ -46,7 +46,7 @@ u-select.vue/package.json           # npm 包信息
 
 主要是因为两种书写方式各有特色。单文件组件创建起来比较快捷，也是 Vue 原生的特色，适用于书写页面组件；多文件组件在功能上支持的更多，适用于构造通用组件，方便扩展。
 
-Webpack 的模块引入字符串可以将`index.js`部分省略，两种书写方式都可以写作`import Select from 'u-select.vue'`，所以它们不会对依赖模块有所影响。
+Webpack 的模块引入字符串可以将`index.js`部分省略，两种书写方式都可以写作`import USelect from 'u-select.vue'`，所以它们不会对依赖模块有所影响。
 
 一般情况下，两种书写方式是**等效**的。
 
@@ -256,7 +256,7 @@ export UCustomSelect;
 </script>
 
 <style module>
-@extends;
+@extend;
 
 .root:before {
     height: 36px;

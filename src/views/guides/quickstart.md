@@ -31,12 +31,12 @@ npm install
 npm run dev
 ```
 
-在 package.json 文件中的 scripts 的`dev`配置的是`vusion dev`。该命令会启动开发服务器，自动打开浏览器，利用 Webpack 监听文件的变化，并在修改这些文件时重新构建此应用。
+在 package.json 文件中的 scripts 的`dev`配置的是`vue-cli-service serve`。该命令会启动开发服务器，自动打开浏览器，利用 Webpack 监听文件的变化，并在修改这些文件时重新构建此应用。
 
-- 可以使用`-p`选项指定端口；
-- 可以使用`--no-open`选项阻止自动打开浏览器。
+- 可以使用`--port`选项指定端口；
+- 可以使用`--open`选项自动打开浏览器。
 
-更多 Vusion CLI 的命令可以查阅 [常见命令](/guides/commands) 或 [命令行工具 API](/api/cli)。
+更多命令和参数可以查阅 [Vue CLI 3 官方文档](https://cli.vuejs.org)。
 
 如果运行成功，便会在浏览器中打开一个如下的 Hello World 页面：
 
