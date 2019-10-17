@@ -4,11 +4,12 @@
         <div :class="$style.wrap">
             <u-navbar color="inverse">
                 <u-logo slot="left" color="inverse"></u-logo>
+                <u-navbar-item exact to="/">首页</u-navbar-item>
                 <u-navbar-item to="/guides">指南</u-navbar-item>
                 <!-- <u-navbar-item to="/concepts">概念</u-navbar-item> -->
                 <u-navbar-item to="/api">API</u-navbar-item>
                 <u-navbar-item to="/libraries">组件库</u-navbar-item>
-                <u-navbar-item to="/templates">模板</u-navbar-item>
+                <!-- <u-navbar-item to="/templates">模板</u-navbar-item> -->
                 <span :class="$style.right">
                     <!-- <u-navbar-item :href="github" target="_blank"><i-icon name="github" style="font-size: 24px;"></i-icon></u-navbar-item> -->
                 </span>

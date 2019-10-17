@@ -1,0 +1,13 @@
+.root {
+    background: #f4f5f9;
+    /* display: flex;
+    flex-wrap: wrap; */
+    padding: 40px 0;
+    min-height: calc(100vh - $navbar-height);
+    text-align: center;
+}
+
+.main {
+    max-width: 1440px;
+    margin: 0 auto;
+}

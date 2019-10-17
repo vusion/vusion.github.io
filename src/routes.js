@@ -17,7 +17,7 @@ const Empty = Vue.extend({ template: '<div>待完善...</div>' });
 
 export default [
     { path: '/', component: Index, children: [
-        { path: '', component: Home, redirect: '/guides' },
+        { path: '', component: Home },
         // { path: 'features', component: Features },
         { path: 'guides', component: Guides, children: guidesRoutes },
         { path: 'concepts', component: Concepts, children: conceptsRoutes },
@@ -26,5 +26,5 @@ export default [
         { path: 'templates', component: Templates },
         { path: 'examples', component: Empty },
     ] },
-    { path: '*', redirect: '/guides' },
+    { path: '*', redirect: '/' },
 ];
