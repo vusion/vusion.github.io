@@ -36,7 +36,7 @@
 │   │   ├─ specific                 # 特定组件
 │   │   │   ├─ u-purchase-list.vue  # 比如一个购买列表
 │   │   │   └─ ...
-│   │   ├─ cloud-ui                 # 需要重写 Cloud UI 的组件
+│   │   ├─ cloud-ui                 # 需要重写 CodeWave. Design 的组件
 │   │   │   ├─ u-select.vue         # 比如需要重写 Select 组件
 │   │   │   ├─ u-select-item.vue
 │   │   │   └─ ...
@@ -132,7 +132,7 @@
 
 ### 组件库或工具库（Library）
 
-这种项目为一个 Vusion 组件库或工具库。比如 Proto UI、Cloud UI、Icon Sets 就是这种类型。
+这种项目为一个 Vusion 组件库或工具库。比如 Proto UI、CodeWave. Design、Icon Sets 就是这种类型。
 
 它的目录结构如下：
 

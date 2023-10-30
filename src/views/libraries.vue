@@ -1,7 +1,7 @@
 <template>
 <div :class="$style.root">
     <div :class="$style.main">
-        <u-library :colors="['#67aaf5', '#4a89e8', '#2cb78e']" target="_blank" title="Cloud UI" logo="163yun" brief="UI库"
+        <u-library :colors="['#67aaf5', '#4a89e8', '#2cb78e']" target="_blank" title="CodeWave. Design" logo="code-wave" brief="UI库"
                     href="https://vusion.github.io/cloud-ui">
             扩展自 Proto UI，组件完善、功能强大、多套主题，用于快速构建网易云风格的 Web 应用。
         </u-library>

@@ -112,6 +112,16 @@ export default {
     background-size: 100%;
 }
 
+.logo[name="code-wave"] {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-top: -5px;
+    vertical-align: middle;
+    background: url(../assets/code-wave-logo.svg) no-repeat;
+    background-size: 100%;
+}
+
 .title {
     display: inline-block;
     margin-left: 15px;
